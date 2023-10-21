@@ -11,7 +11,10 @@ const bodyParser = require("body-parser");
 
 const { env } = process;
 
-const app = express().use(bodyParser.json());
+const cors = require("cors");
+const app = express()
+  .use(bodyParser.json())
+  .use(cors({ origin: "*" }));
 
 const PORT = env.SERVER_PORT || 3000;
 const logger = winston.createLogger({
