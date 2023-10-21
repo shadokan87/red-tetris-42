@@ -1,3 +1,5 @@
+const { PrismaClient } = require("@prisma/client");
+import { userService } from "./services/user";
 const express = require("express");
 const app = express();
 const PORT = 3000;
@@ -14,55 +16,27 @@ const logger = winston.createLogger({
     new winston.transports.File({ filename: "combined.log" }),
   ],
 });
-let knex = null;
+const prisma = new PrismaClient();
+const services = {
+  user: new userService(prisma),
+};
 
 app.get("/", (req, res) => {
   res.send("hello world !");
 });
 
-async function createDatabase() {
-  logger.log("+++ Creating database +++");
-  await knex.schema
-    .createTable("user", (table) => {
-      table.increments("id").primary();
-      table.string("username").unique().notNullable();
-      table.string("displayname").unique().notNullable();
-      table.string("password").notNullable();
-    })
-    .then(() => {
-      logger.info("User table created");
-    })
-    .catch((e) => {
-      logger.error("Failed to create user table");
-    });
-}
+app.post("/auth/login", async (req, res) => {
+  const { usernName, password } = req.body;
 
-async function initializeDatabase() {
-  const { PG_CONNECTION_STRING } = process.env;
-  try {
-    knex = require("knex")({
-      client: "pg",
-      connection: PG_CONNECTION_STRING,
-      searchPath: ["knex", "public"],
-    });
-
-    // Check database connection
-    await knex.raw("SELECT 1").then(() => {
-      Object.freeze(knex);
-      logger.info("database initialized successfully");
-    });
-
-    await knex.schema.hasTable("user").then((exists) => {
-      if (!exists) createDatabase();
-      else console.log("user exist");
-    });
-  } catch (e) {
-    logger.error("database connection failed");
-  }
-  return true;
-}
+  const user = await services.user.findByUserName("username");
+  return res.status(200).json({ message: "user", data: user });
+});
 
 app.listen(PORT, async () => {
-  await initializeDatabase();
+  const users = await services.user.getAll();
+  if (!users.length) {
+    await services.user.create("username", "password", "test");
+  }
+  console.log("!!! users", users);
   console.log(`server is running on http://localhost:${PORT}`);
 });
