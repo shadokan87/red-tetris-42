@@ -16,28 +16,28 @@ export class userService {
     });
   }
 
-  async findByDisplayName(userName) {
+  async findByDisplayName(username) {
     return await this.prismaClient.user.findFirst({
       where: {
-        userName,
+        username,
       },
     });
   }
 
-  async findByUserName(userName) {
+  async findByUserName(username) {
     return await this.prismaClient.user.findFirst({
       where: {
-        userName,
+        username,
       },
     });
   }
 
-  async create(userName, password, displayName) {
+  async create(username, password, displayname) {
     return await this.prismaClient.user.create({
       data: {
-        userName,
+        username,
         password,
-        displayName,
+        displayname,
       },
     });
   }

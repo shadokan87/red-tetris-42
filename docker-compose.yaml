@@ -32,6 +32,8 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
       PG_CONNECTION_STRING: ${PG_CONNECTION_STRING}
+      JWT_SECRET: ${JWT_SECRET}
+      HASH_SALT_ROUND: ${HASH_SALT_ROUND}
     volumes:
       - "./server:/app"
     working_dir: /app
