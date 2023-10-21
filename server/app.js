@@ -1,5 +1,7 @@
 import { authService } from "./services/auth";
+import { roomService } from "./services/room";
 import { userService } from "./services/user";
+import { validateRoomCreation, verifyToken } from "./validators/index";
 
 const express = require("express");
 const { PrismaClient } = require("@prisma/client");
@@ -8,12 +10,14 @@ const winston = require("winston");
 const bodyParser = require("body-parser");
 
 const { env } = process;
+
 const app = express().use(bodyParser.json());
+
 const PORT = env.SERVER_PORT || 3000;
 const logger = winston.createLogger({
   level: "info",
   format: winston.format.json(),
-  defaultMeta: { service: "my-service" },
+  defaultMeta: { service: "red-tetris_okay" },
   transports: [
     new winston.transports.Console(),
     new winston.transports.File({ filename: "error.log", level: "error" }),
@@ -23,76 +27,32 @@ const logger = winston.createLogger({
   ],
 });
 const prisma = new PrismaClient();
-const services = {
+export const services = {
   user: new userService(prisma),
   auth: new authService(prisma, env.JWT_SECRET),
+  room: new roomService(),
 };
-
-const rooms = new Map();
-
-// Middleware to verify token
-const verifyToken = async (req, res, next) => {
-  if (req.user || req.decoded)
-    return res.status(StatusCode.ClientErrorForbidden).send("Forbidden");
-
-  const authHeader = req.headers["authorization"];
-  if (!authHeader)
-    return res
-      .status(StatusCode.ClientErrorUnauthorized)
-      .json({ message: "No token provided" });
-
-  const token = authHeader.split(" ")[1];
-  let decoded;
-  let user;
-  try {
-    decoded = await services.auth.verify(token);
-    user = await services.user.findByUserName(decoded.username);
-  } catch (err) {
-    return res.status(StatusCode.ClientErrorUnauthorized).send("Unauthorized");
-  }
-
-  if (!decoded)
-    return res.status(StatusCode.ClientErrorUnauthorized).send("Unauthorized");
-
-  req.decoded = decoded;
-  req.user = user;
-  next();
-};
-
 //# Game
-app.post("/game/room/create", verifyToken, async (req, res, next) => {
-  const { roomName, ...rest } = req.body;
-  if (Object.keys(rest).length > 0) {
-    return res
-      .status(StatusCode.ClientErrorBadRequest)
-      .json({ message: "Invalid request parameters" });
-  }
-  if (!roomName) {
-    return res
-      .status(StatusCode.ClientErrorBadRequest)
-      .send("Room name is required");
-  }
+app.post(
+  "/game/room/create",
+  verifyToken,
+  validateRoomCreation,
+  async (req, res) => {
+    services.room.create(req.user.id, {
+      name: req.body.name,
+    });
 
-  if (rooms.has(req.user.id))
     return res
-      .status(StatusCode.ClientErrorConflict)
-      .json({ message: "You already own a room" });
-  const room = {
-    name: roomName,
-  };
-  rooms.set(req.user.id, room);
-  console.log(rooms);
-
-  return res
-    .status(StatusCode.SuccessCreated)
-    .send("Room created successfully");
-});
+      .status(StatusCode.SuccessCreated)
+      .send("Room created successfully");
+  }
+);
 
 app.delete("/game/room/delete", verifyToken, async (req, res, next) => {
-  if (!rooms.has(req.user.id)) {
+  if (!services.room.exist(req.user.id)) {
     return res.status(StatusCode.ClientErrorNotFound).send("Room not found");
   }
-  rooms.delete(req.user.id);
+  services.room.destroy(req.user.id);
   return res.status(StatusCode.SuccessOK).send("Room deleted successfully");
 });
 

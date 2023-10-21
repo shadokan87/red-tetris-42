@@ -47,11 +47,11 @@ enter-db:
 	@docker exec -it ${DB_NAME} sh
 	@echo "$(_CYAN) You $(_RED)exited$(_CYAN) the BDD container $(_ENDL)"
 
-.PHONY: enter-front
-enter-front:
-	@echo "$(_CYAN) You $(_GREEN)entered$(_CYAN) the FrontEnd container $(_ENDL)"
-	@docker exec -it front sh
-	@echo "$(_CYAN) You $(_RED)exited$(_CYAN) the FrontEnd container $(_ENDL)"
+.PHONY: enter-client
+enter-client:
+	@echo "$(_CYAN) You $(_GREEN)entered$(_CYAN) the clientEnd container $(_ENDL)"
+	@docker exec -it client sh
+	@echo "$(_CYAN) You $(_RED)exited$(_CYAN) the clientEnd container $(_ENDL)"
 
 
 # SHORTCUT 
@@ -70,8 +70,8 @@ log-file_service:
 log-db:
 	@docker logs ${DB_NAME} -f
 
-.PHONY: log-front
-log-front:
-	@docker logs front -f
+.PHONY: log-client
+log-client:
+	@docker logs client -f
 
 
