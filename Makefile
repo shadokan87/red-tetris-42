@@ -49,9 +49,9 @@ enter-db:
 
 .PHONY: enter-client
 enter-client:
-	@echo "$(_CYAN) You $(_GREEN)entered$(_CYAN) the clientEnd container $(_ENDL)"
+	@echo "$(_CYAN) You $(_GREEN)entered$(_CYAN) the client container $(_ENDL)"
 	@docker exec -it client sh
-	@echo "$(_CYAN) You $(_RED)exited$(_CYAN) the clientEnd container $(_ENDL)"
+	@echo "$(_CYAN) You $(_RED)exited$(_CYAN) the client container $(_ENDL)"
 
 
 # SHORTCUT 

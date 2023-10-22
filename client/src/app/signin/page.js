@@ -1,7 +1,12 @@
+import { useDispatch } from "react-redux";
+import { tokenSelector } from "../redux/sessionReducer";
+import { userSelector } from "../redux/sessionReducer";
+import { Flex, Input } from "antd";
+
 export default function Signin() {
   return (
     <main>
-      <h1>{"singin page"}</h1>
+      <Flex></Flex>
     </main>
   );
 }

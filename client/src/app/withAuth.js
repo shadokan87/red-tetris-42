@@ -1,26 +1,25 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Provider } from "react-redux";
-import store from "./redux/store";
+import { useDispatch } from "react-redux";
+import { tokenSelector } from "./redux/sessionReducer";
+import { userSelector } from "./redux/sessionReducer";
 
 const router = () => {};
 
 const withAuth = (Component) => {
   return (props) => {
+    const dispatch = useDispatch();
     const [isAuth, setIsAuth] = useState(false);
+    const router = useRouter();
 
     useEffect(() => {
       if (!isAuth) {
-        console.warn("not auth");
+        router.push("/signin", undefined, { shallow: true });
       }
     }, [isAuth]);
 
-    return (
-      <Provider store={store}>
-        <Component {...props} />
-      </Provider>
-    );
+    return <Component {...props} />;
   };
 };
 

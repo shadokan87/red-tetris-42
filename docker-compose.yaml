@@ -24,7 +24,7 @@ services:
       - "${SERVER_PORT:-3000}:${SERVER_PORT:-3000}"
       - "${PRISMA_STUDIO_PORT:-5555}:${PRISMA_STUDIO_PORT:-5555}"
     restart: always
-    command: /bin/sh -c "curl -fsSL https://bun.sh/install | bash && npm i && ~/.bun/bin/./bun run --hot app.js"
+    command: /bin/sh -c "./installBun.sh && npm i && ~/.bun/bin/./bun run --hot app.js"
     environment:
       SERVER_PORT: ${SERVER_PORT:-3000}
       PRISMA_STUDIO_PORT: ${PISMA_STUDIO_PORT:-5555}
@@ -46,7 +46,7 @@ services:
     volumes:
       - ./client/:/app
     working_dir: /app
-    command: /bin/sh -c "curl -fsSL https://bun.sh/install | bash && npm i && ~/.bun/bin/./bun run dev"
+    command: /bin/sh -c "./installBun.sh && npm i && ~/.bun/bin/./bun run dev"
     environment:
       CLIENT_PORT: ${CLIENT_PORT:-3000}
     ports:
