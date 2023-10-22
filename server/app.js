@@ -149,6 +149,7 @@ app.post(
   "/auth/signin",
   async (req, res, next) => {
     const { username, password, ...rest } = req.body;
+    console.log("!login", req.body);
     if (Object.keys(rest).length > 0) {
       return res
         .status(StatusCode.ClientErrorBadRequest)

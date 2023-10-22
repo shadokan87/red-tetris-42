@@ -12,7 +12,7 @@ export const validateRoomCreation = async (req, res, next) => {
       .status(StatusCode.ClientErrorBadRequest)
       .send("Room name is required");
   }
-
+  console.log("! req", req["user"]);
   if (services.room.exist(req.user.id))
     return res
       .status(StatusCode.ClientErrorConflict)

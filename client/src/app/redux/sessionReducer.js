@@ -1,14 +1,29 @@
 import { createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
 
 const sessionSlice = createSlice({
   name: "session",
   initialState: {
     token: null,
     user: null,
+    axiosInstance: null,
   },
   reducers: {
-    setUser: (state, action) => (state.user = action.payload),
-    setToken: (state, action) => (state.token = action.payload),
+    setUser: (state, action) => {
+      state.user = action.payload;
+    },
+    setToken: (state, action) => {
+      state.token = action.payload;
+      state.axiosInstance = axios.create({
+        baseURL: "http://localhost:3000",
+        withCredentials: true,
+        timeout: 10000,
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${action.payload}`,
+        },
+      });
+    },
   },
 });
 

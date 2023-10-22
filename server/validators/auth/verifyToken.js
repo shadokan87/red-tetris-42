@@ -17,6 +17,7 @@ export const verifyToken = async (req, res, next) => {
   try {
     decoded = await services.auth.verify(token);
     user = await services.user.findByUserName(decoded.username);
+    console.log("!!+++++++++ user", user);
   } catch (err) {
     return res.status(StatusCode.ClientErrorUnauthorized).send("Unauthorized");
   }
