@@ -6,7 +6,7 @@ const sessionSlice = createSlice({
   initialState: {
     token: null,
     user: null,
-    axiosInstance: null,
+    axiosConfig: null,
   },
   reducers: {
     setUser: (state, action) => {
@@ -14,7 +14,7 @@ const sessionSlice = createSlice({
     },
     setToken: (state, action) => {
       state.token = action.payload;
-      state.axiosInstance = axios.create({
+      state.axiosConfig = {
         baseURL: "http://localhost:3000",
         withCredentials: true,
         timeout: 10000,
@@ -22,7 +22,7 @@ const sessionSlice = createSlice({
           "Content-Type": "application/json",
           Authorization: `Bearer ${action.payload}`,
         },
-      });
+      };
     },
   },
 });
@@ -31,4 +31,6 @@ export const { setUser, setToken } = sessionSlice.actions;
 export const sessionInitialState = sessionSlice.initialState;
 export const tokenSelector = (state) => state.session.token;
 export const userSelector = (state) => state.session.user;
+export const axiosConfigSelector = (state) => state.session.axiosConfig;
+
 export default sessionSlice.reducer;

@@ -1,5 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
+import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { tokenSelector } from "./redux/sessionReducer";
@@ -10,8 +11,14 @@ const router = () => {};
 const withAuth = (Component) => {
   return (props) => {
     const dispatch = useDispatch();
-    const [isAuth, setIsAuth] = useState(false);
+    const token = useSelector(tokenSelector);
+    const user = useSelector(userSelector);
+    const [isAuth, setIsAuth] = useState(user && token);
     const router = useRouter();
+
+    useEffect(() => {
+      setIsAuth(user && token);
+    }, [token, user]);
 
     useEffect(() => {
       if (!isAuth) {

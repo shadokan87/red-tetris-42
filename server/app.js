@@ -10,11 +10,15 @@ const winston = require("winston");
 const bodyParser = require("body-parser");
 
 const { env } = process;
-
 const cors = require("cors");
 const app = express()
   .use(bodyParser.json())
-  .use(cors({ origin: "*" }));
+  .use(
+    cors({
+      origin: "http://localhost:3001",
+      credentials: true,
+    })
+  );
 
 const PORT = env.SERVER_PORT || 3000;
 const logger = winston.createLogger({
@@ -170,6 +174,10 @@ app.post(
     return res.status(StatusCode.SuccessOK).json({ "access-token": token });
   }
 );
+
+app.get("/auth/user", verifyToken, async (req, res) => {
+  return res.status(StatusCode.SuccessOK).json(req.user);
+});
 
 app.listen(PORT, async () => {
   const users = await services.user.getAll();
