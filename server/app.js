@@ -3,13 +3,16 @@ import { roomService } from "./services/room";
 import { userService } from "./services/user";
 import { validateRoomCreation, verifyToken } from "./validators/index";
 
+const { env } = process;
+
+const PORT = env.SERVER_PORT || 3000;
+const http = require("http");
 const express = require("express");
 const { PrismaClient } = require("@prisma/client");
 const { StatusCode } = require("status-code-enum");
 const winston = require("winston");
 const bodyParser = require("body-parser");
 
-const { env } = process;
 const cors = require("cors");
 const app = express()
   .use(bodyParser.json())
@@ -19,8 +22,8 @@ const app = express()
       credentials: true,
     })
   );
-
-const PORT = env.SERVER_PORT || 3000;
+const server = http.createServer(app);
+const socket = require("./socket");
 const logger = winston.createLogger({
   level: "info",
   format: winston.format.json(),
@@ -30,15 +33,17 @@ const logger = winston.createLogger({
     new winston.transports.File({ filename: "error.log", level: "error" }),
     new winston.transports.File({ filename: "info.log", level: "info" }),
     new winston.transports.File({ filename: "warn.log", level: "warn" }),
+    new winston.transports.File({ filename: "socket.log", level: "socket" }),
     new winston.transports.File({ filename: "combined.log" }),
   ],
 });
 const prisma = new PrismaClient();
-export const services = {
+export let services = {
   user: new userService(prisma),
-  auth: new authService(prisma, env.JWT_SECRET),
   room: new roomService(),
 };
+services["auth"] = new authService(prisma, services["user"], env.JWT_SECRET);
+Object.freeze(services);
 //# Game
 app.post(
   "/game/room/create",
@@ -179,7 +184,10 @@ app.get("/auth/user", verifyToken, async (req, res) => {
   return res.status(StatusCode.SuccessOK).json(req.user);
 });
 
-app.listen(PORT, async () => {
+socket.setServices(services);
+socket.setLogger(logger);
+socket.init(server);
+server.listen(PORT, async () => {
   const users = await services.user.getAll();
   if (!users.length) {
     await services.user.create("username", "password", "test");

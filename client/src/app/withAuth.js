@@ -5,6 +5,9 @@ import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { tokenSelector } from "./redux/sessionReducer";
 import { userSelector } from "./redux/sessionReducer";
+import { setToken } from "./redux/sessionReducer";
+import { fetchAuthUser } from "./redux/sessionReducer";
+import Cookies from "js-cookie";
 
 const router = () => {};
 
@@ -22,9 +25,23 @@ const withAuth = (Component) => {
 
     useEffect(() => {
       if (!isAuth) {
-        router.push("/signin", undefined, { shallow: true });
+        const tokenFromCookie = Cookies.get("token");
+        if (tokenFromCookie) {
+          dispatch(
+            setToken({
+              token: tokenFromCookie,
+              remember: false,
+            })
+          );
+          dispatch(fetchAuthUser());
+        } else if (router.pathname !== "/signin") {
+          router.push("/signin", undefined, { shallow: true });
+        }
+      } else {
+        if (router.pathname != "/lobby")
+          router.push("/lobby", undefined, { shallow: true });
       }
-    }, [isAuth]);
+    }, [isAuth, dispatch]);
 
     return <Component {...props} />;
   };

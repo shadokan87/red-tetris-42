@@ -2,12 +2,14 @@
 import { useEffect } from "react";
 import withAuth from "../withAuth";
 import { useSelector } from "react-redux";
-import { tokenSelector } from "../redux/sessionReducer";
+import { tokenSelector, userSelector } from "../redux/sessionReducer";
 
 function Lobby() {
+  const user = useSelector(userSelector);
+  if (!user) return <></>;
   return (
     <main>
-      <h1>{"Lobby page"}</h1>
+      <h1>{user.username}</h1>
     </main>
   );
 }

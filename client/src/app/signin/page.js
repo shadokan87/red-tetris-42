@@ -1,41 +1,30 @@
 "use client";
 import { useDispatch, useSelector } from "react-redux";
-import { axiosConfigSelector, tokenSelector } from "../redux/sessionReducer";
+import {
+  axiosConfigSelector,
+  fetchAuthUser,
+  tokenSelector,
+} from "../redux/sessionReducer";
 import { userSelector } from "../redux/sessionReducer";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Flex, Input, Typography, Button, Form } from "antd";
+import { Flex, Input, Typography, Button, Form, Checkbox } from "antd";
 import { setToken } from "../redux/sessionReducer";
 import { setUser } from "../redux/sessionReducer";
 import "./signin.module.css";
 import { useRouter } from "next/navigation";
+import withAuth from "../withAuth";
 
 const SIGNIN_URL = "http://localhost:3000/auth/signin";
 
-export default function Signin() {
+function Signin() {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
+  const [rememberMe, setRememberMe] = useState(true);
   const token = useSelector(tokenSelector);
+  const user = useSelector(userSelector);
   const axiosConfig = useSelector(axiosConfigSelector);
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    if (!axiosConfig) return;
-    const axiosInstance = axios.create(axiosConfig);
-    (async () => {
-      await axiosInstance.get("/auth/verifyToken").catch((e) => {
-        alert("Token invalid");
-      });
-      const user = await axiosInstance
-        .get("/auth/user")
-        .then(({ data }) => data)
-        .catch((e) => {
-          alert("failed to get user");
-        });
-      dispatch(setUser(user));
-      router.push("/lobby", undefined, { shallow: true });
-    })();
-  }, [axiosConfig]);
 
   const onFinish = (values) => {
     (async () => {
@@ -43,7 +32,13 @@ export default function Signin() {
       await axios
         .post(SIGNIN_URL, values)
         .then((response) => {
-          dispatch(setToken(response.data["access-token"]));
+          dispatch(
+            setToken({
+              token: response.data["access-token"],
+              remember: rememberMe,
+            })
+          );
+          dispatch(fetchAuthUser());
           console.log("login response", response);
         })
         .catch((e) => {
@@ -52,6 +47,11 @@ export default function Signin() {
       setIsLoading(false);
     })();
   };
+
+  // useEffect(() => {
+  //   if (!user) alert("user not set");
+  //   else alert("user is set" + JSON.stringify(user));
+  // }, [user]);
 
   return (
     <main className={"landing"}>
@@ -63,6 +63,12 @@ export default function Signin() {
         <Form.Item name="password" rules={[{ required: true }]}>
           <Input.Password placeholder="password" />
         </Form.Item>
+        <Checkbox
+          checked={rememberMe}
+          onChange={(e) => setRememberMe(e.target.checked)}
+        >
+          Remember me
+        </Checkbox>
         <Form.Item>
           <Button type="primary" htmlType="submit" disabled={isLoading == true}>
             <Typography>{"Signin"}</Typography>
@@ -72,3 +78,5 @@ export default function Signin() {
     </main>
   );
 }
+
+export default withAuth(Signin);

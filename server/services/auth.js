@@ -2,15 +2,18 @@ import jwt from "jsonwebtoken";
 
 export class authService {
   prismaClient;
+  userService;
   secretKey;
 
-  constructor(prismaClient, secretKey) {
+  constructor(prismaClient, userService, secretKey) {
     this.prismaClient = prismaClient;
+    this.userService = userService;
     this.secretKey = secretKey;
   }
 
   async sign(username, password) {
-    const token = jwt.sign({ username, password }, this.secretKey);
+    const user = await this.userService.findByUserName(username);
+    const token = jwt.sign({ id: user.id, username, password }, this.secretKey);
     return token;
   }
 
