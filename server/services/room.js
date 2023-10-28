@@ -8,8 +8,8 @@ export class roomService {
     return this.rooms.has(ownerUserId);
   }
 
-  create(ownerUserId, name) {
-    this.rooms.set(ownerUserId, name);
+  create(ownerUserId, data) {
+    this.rooms.set(ownerUserId, data);
   }
 
   destroy(ownerUserId) {

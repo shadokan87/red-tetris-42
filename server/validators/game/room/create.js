@@ -1,7 +1,7 @@
 import { services } from "../../../app";
 import StatusCode from "status-code-enum";
 export const validateRoomCreation = async (req, res, next) => {
-  const { name, ...rest } = req.body;
+  const { name, isPublic, ...rest } = req.body;
   if (Object.keys(rest).length > 0) {
     return res
       .status(StatusCode.ClientErrorBadRequest)

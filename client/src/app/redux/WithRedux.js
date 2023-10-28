@@ -3,6 +3,7 @@ import store from "./store";
 import { useEffect, useState } from "react";
 import { tokenSelector } from "./sessionReducer";
 import { io } from "socket.io-client";
+import { AxiosProvider } from "../contexts/axios";
 
 const SocketHandler = ({ children }) => {
   const token = useSelector(tokenSelector);
@@ -23,10 +24,13 @@ const SocketHandler = ({ children }) => {
 
   return <>{children}</>;
 };
+
 export const WithRedux = ({ children }) => {
   return (
     <Provider store={store}>
-      <SocketHandler>{children}</SocketHandler>
+      <AxiosProvider>
+        <SocketHandler>{children}</SocketHandler>
+      </AxiosProvider>
     </Provider>
   );
 };

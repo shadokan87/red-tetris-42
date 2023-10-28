@@ -48,11 +48,6 @@ function Signin() {
     })();
   };
 
-  // useEffect(() => {
-  //   if (!user) alert("user not set");
-  //   else alert("user is set" + JSON.stringify(user));
-  // }, [user]);
-
   return (
     <main className={"landing"}>
       <div></div>

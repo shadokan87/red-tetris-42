@@ -38,8 +38,14 @@ const withAuth = (Component) => {
           router.push("/signin", undefined, { shallow: true });
         }
       } else {
-        if (router.pathname != "/lobby")
-          router.push("/lobby", undefined, { shallow: true });
+        switch (router.pathname) {
+          case "/":
+          case "/lobby":
+            break;
+          default:
+            // router.push("/lobby", undefined, { shallow: true });
+            break;
+        }
       }
     }, [isAuth, dispatch]);
 

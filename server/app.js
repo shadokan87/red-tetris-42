@@ -52,6 +52,7 @@ app.post(
   async (req, res) => {
     services.room.create(req.user.id, {
       name: req.body.name,
+      isPublic: req.body.isPublic,
     });
 
     return res
@@ -59,6 +60,15 @@ app.post(
       .send("Room created successfully");
   }
 );
+
+app.get("/game/room/:userId?", verifyToken, async (req, res) => {
+  const userId = req.params.userId || req.user.id;
+  const room = services.room.get(userId);
+  if (!room) {
+    return res.status(StatusCode.ClientErrorNotFound).send("Room not found");
+  }
+  return res.status(StatusCode.SuccessOK).json(room);
+});
 
 app.delete("/game/room/delete", verifyToken, async (req, res, next) => {
   if (!services.room.exist(req.user.id)) {
@@ -182,6 +192,10 @@ app.post(
 
 app.get("/auth/user", verifyToken, async (req, res) => {
   return res.status(StatusCode.SuccessOK).json(req.user);
+});
+
+app.get("/", (req, res) => {
+  return res.status(StatusCode.SuccessOK).json({ message: "Success" });
 });
 
 socket.setServices(services);
