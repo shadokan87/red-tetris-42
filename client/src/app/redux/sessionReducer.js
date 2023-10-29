@@ -6,7 +6,6 @@ import Cookies from "js-cookie";
 export const fetchAuthUser = createAsyncThunk(
   "session/fetchAuthUser",
   async (_, { getState }) => {
-    console.log("+++");
     const axiosConfig = getState().session.axiosConfig;
     if (!axiosConfig) return;
     const axiosInstance = axios.create(axiosConfig);

@@ -37,12 +37,24 @@ const logger = winston.createLogger({
     new winston.transports.File({ filename: "combined.log" }),
   ],
 });
+//# Services
 const prisma = new PrismaClient();
-export let services = {
-  user: new userService(prisma),
-  room: new roomService(),
-};
-services["auth"] = new authService(prisma, services["user"], env.JWT_SECRET);
+export let services = {};
+
+/**
+ * Adds a new service to the services object.
+ * @param {string} name - The name of the service. This is used to index the service in the services object.
+ * @param {function} newService - The constructor function for the service.
+ * @param {...any} dependencies - The dependencies for the service.
+ */
+function addService(name, newService, ...dependencies) {
+  services[name] = new newService(...dependencies);
+}
+
+addService("user", userService, prisma);
+addService("room", roomService);
+addService("auth", authService, prisma, services["user"], env.JWT_SECRET);
+
 Object.freeze(services);
 //# Game
 app.post(
@@ -50,16 +62,85 @@ app.post(
   verifyToken,
   validateRoomCreation,
   async (req, res) => {
-    services.room.create(req.user.id, {
+    const createdRoom = services.room.create(req.user.id, {
       name: req.body.name,
       isPublic: req.body.isPublic,
+      owner: req.user.id,
+      gameStarted: false,
     });
 
-    return res
-      .status(StatusCode.SuccessCreated)
-      .send("Room created successfully");
+    return res.status(StatusCode.SuccessCreated).json({
+      message: "Room created successfully",
+      room: createdRoom,
+    });
   }
 );
+
+app.post("/game/start", verifyToken, async (req, res) => {
+  const room = services.room.get(req.user.id);
+  if (!room) {
+    return res.status(StatusCode.ClientErrorNotFound).send("Room not found");
+  }
+  if (!("opponent" in room)) {
+    return res
+      .status(StatusCode.ClientErrorBadRequest)
+      .send("Game cannot start without an opponent");
+  }
+  const updatedRoom = services.room.update(req.user.id, (room) => {
+    return { ...room, gameStarted: true };
+  });
+  const result = {
+    message: `game started`,
+    room: updatedRoom,
+  };
+  const socketMap = socket.getSocketMap();
+  const io = socket.getIO();
+  [room.opponent, req.user.id].forEach((id) => {
+    const userInfo = socketMap.get(id);
+    if (userInfo) {
+      userInfo.socket.emit("roomUpdate", result);
+      logger.info("emit to" + id, result);
+    } else logger.info("cannot emit, not connected" + id);
+  });
+  return res.status(StatusCode.SuccessOK).json(result);
+});
+
+app.post("/game/room/join/:displayname", verifyToken, async (req, res) => {
+  const displayname = req.params.displayname;
+  if (!displayname) {
+    return res
+      .status(StatusCode.ClientErrorBadRequest)
+      .send("Bad Request: displayname is required");
+  }
+  const user = await services.user.findByDisplayName(displayname);
+  if (!user) {
+    return res.status(StatusCode.ClientErrorNotFound).send("User not found");
+  }
+  if (!services.room.exist(user.id)) {
+    return res
+      .status(StatusCode.ClientErrorNotFound)
+      .send("Room does not exist");
+  }
+  if (services.room.isRoomCrowded(user.id)) {
+    return res.status(StatusCode.ClientErrorBadRequest).send("Room is crowded");
+  }
+
+  const updatedRoom = services.room.addMember(user.id, req.user.id);
+  const result = {
+    message: `${req.user.displayname} has joined the room`,
+    room: updatedRoom,
+  };
+  const socketMap = socket.getSocketMap();
+  const io = socket.getIO();
+  [user.id, req.user.id].forEach((id) => {
+    const userInfo = socketMap.get(id);
+    if (userInfo) {
+      userInfo.socket.emit("roomUpdate", result);
+      logger.info("emit to" + id, result);
+    } else logger.info("cannot emit, not connected" + id);
+  });
+  return res.status(StatusCode.SuccessOK).json(result);
+});
 
 app.get("/game/room/:userId?", verifyToken, async (req, res) => {
   const userId = req.params.userId || req.user.id;

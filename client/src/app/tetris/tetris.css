@@ -1,0 +1,27 @@
+#main {
+  height: 100%;
+  margin: 0;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playground {
+  height: 640px;
+  width: 320px;
+  border: 1px solid white;
+}
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 32px);
+  grid-template-rows: repeat(20, 32px);
+  border: 1px solid #ccc;
+}
+
+.piece {
+  display: grid;
+  grid-template-columns: repeat(3, 32px);
+  grid-template-rows: repeat(2, 32px);
+  border: 1px solid #ccc;
+}

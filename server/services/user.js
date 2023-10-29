@@ -16,10 +16,10 @@ export class userService {
     });
   }
 
-  async findByDisplayName(username) {
+  async findByDisplayName(displayname) {
     return await this.prismaClient.user.findFirst({
       where: {
-        username,
+        displayname,
       },
     });
   }

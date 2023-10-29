@@ -1,19 +1,14 @@
 "use client";
 import { useContext, useEffect, useMemo, useState } from "react";
 import withAuth from "../withAuth";
-import { useSelector } from "react-redux";
-import {
-  axiosConfigSelector,
-  tokenSelector,
-  userSelector,
-} from "../redux/sessionReducer";
+import { useDispatch, useSelector } from "react-redux";
+import { userSelector } from "../redux/sessionReducer";
 import { Button, Modal, Typography, Flex } from "antd";
-import { useAxiosInstance } from "../hooks/axiosInstance";
 import { useAxios } from "../contexts/axios";
 import { message } from "antd";
 import axios from "axios";
-
 import { Form, Input, Checkbox } from "antd";
+import { roomSelector, setRoom } from "../redux/lobbyReducer";
 
 const CreateRoomModal = ({ open, onCancel, onCreate }) => {
   const [form] = Form.useForm();
@@ -63,7 +58,8 @@ const CreateRoomModal = ({ open, onCancel, onCreate }) => {
 
 function Lobby() {
   const { axiosReady, axiosInstance } = useAxios();
-  const axiosConfig = useSelector(axiosConfigSelector);
+  const dispatch = useDispatch();
+  const room = useSelector(roomSelector);
   const user = useSelector(userSelector);
   const [createRoom, setCreateRoom] = useState(false);
   const [messageApi, contextHolder] = message.useMessage();
@@ -71,12 +67,13 @@ function Lobby() {
   const handleCancel = () => {
     setCreateRoom((prev) => !prev);
   };
+
   const handleCreateRoom = async (values) => {
     try {
-      console.log("!values", values);
-      const instance = axios.create(axiosConfig);
-      console.log("!instance test", axiosConfig);
-      const response = await instance.post("/game/room/create", values);
+      console.log("axios state", axiosInstance);
+      const response = await axiosInstance.post("/game/room/create", values);
+      dispatch(setRoom(response.data.room));
+      // console.log("response", response.data);
       messageApi.success("Room created successfully");
     } catch (error) {
       console.error(error);
@@ -85,16 +82,47 @@ function Lobby() {
     setCreateRoom((prev) => !prev);
   };
 
-  // useEffect(() => {
-  //   if (!axiosReady) console.warn("axios not ready");
-  //   else console.log("axios is ready");
-  // }, [axiosReady]);
+  const handleStartGame = async () => {
+    try {
+      const response = await axiosInstance.post("/game/start");
+      dispatch(setRoom(response.data.room));
+      messageApi.success("Game started successfully");
+    } catch (error) {
+      console.error(error);
+      messageApi.error("Failed to start game");
+    }
+  };
 
   if (!user || !axiosReady) return <></>;
+
+  const Actions = () => {
+    if (!room) return <Typography>{"No room"}</Typography>;
+    else {
+      const opponentIsPresent = "opponent" in room;
+      if (opponentIsPresent)
+        return (
+          <Button type={"primary"} onClick={() => handleStartGame()}>
+            {"Start game"}
+          </Button>
+        );
+      else
+        return (
+          <Button
+            type={"dashed"}
+            disabled={true}
+            onClick={() => setCreateRoom(true)}
+          >
+            {"Waiting for opponent"}
+          </Button>
+        );
+    }
+  };
+
   return (
     <main>
       {contextHolder}
       <h1>{user.username}</h1>
+      {(room && JSON.stringify(room)) || <h1>{"no room"}</h1>}
       <CreateRoomModal
         open={createRoom}
         onCancel={handleCancel}
@@ -103,6 +131,7 @@ function Lobby() {
       <Button type={"primary"} onClick={() => setCreateRoom(true)}>
         {"Create room"}
       </Button>
+      <Actions />
     </main>
   );
 }

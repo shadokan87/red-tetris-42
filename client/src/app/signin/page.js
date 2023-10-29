@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 import { Flex, Input, Typography, Button, Form, Checkbox } from "antd";
 import { setToken } from "../redux/sessionReducer";
 import { setUser } from "../redux/sessionReducer";
-import "./signin.module.css";
+import "./signin.css";
 import { useRouter } from "next/navigation";
 import withAuth from "../withAuth";
 

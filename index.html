@@ -158,7 +158,7 @@
 
       // show the game over screen
       function showGameOver() {
-        cancelAnimationFrame(rAF);
+        clearInterval(interval); // use clearInterval instead of cancelAnimationFrame
         gameOver = true;
 
         context.fillStyle = "black";
@@ -244,7 +244,7 @@
 
       let count = 0;
       let tetromino = getNextTetromino();
-      let rAF = null; // keep track of the animation frame so we can cancel it
+      let interval = null; // use setInterval instead of requestAnimationFrame
       let gameOver = false;
       const playGround = document.getElementById("playGround");
       const gameGrid = document.getElementById("gameGrid");
@@ -261,7 +261,6 @@
         gameGrid.appendChild(onePiece);
       };
       function loop() {
-        rAF = requestAnimationFrame(loop);
         context.clearRect(0, 0, canvas.width, canvas.height);
         while (gameGrid.firstChild) {
           gameGrid.removeChild(gameGrid.firstChild);
@@ -387,7 +386,7 @@
       });
 
       // start the game
-      rAF = requestAnimationFrame(loop);
+      interval = setInterval(loop, 1000 / 60); // use setInterval instead of requestAnimationFrame
     </script>
   </body>
 </html>

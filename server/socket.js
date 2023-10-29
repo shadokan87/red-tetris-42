@@ -21,7 +21,7 @@ module.exports = {
       const token = socket.handshake.query.token;
       const user = await services.auth.verify(token);
       if (user) {
-        socketInfo.set(socket.id, {
+        socketInfo.set(user.id, {
           user,
           socket,
         });
@@ -55,5 +55,8 @@ module.exports = {
       throw new Error("Socket.io not initialized!");
     }
     return io;
+  },
+  getSocketMap: () => {
+    return socketInfo;
   },
 };
