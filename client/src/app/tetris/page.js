@@ -3,33 +3,22 @@ import { useEffect, useRef, useState } from "react";
 import "./tetris.css";
 import { Tetris as TetrisGame } from "./tetris";
 import { Button } from "antd";
+import { RenderTetris, drawPieceAt } from "./RenderTetris";
+import { Mutex } from "../utils";
 
 const keyStokes = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
 
 const Tetris = () => {
-  const grid = 32;
-
   const gameGrid = useRef(null);
-  const drawPieceAt = (data) => {
-    const { row, col, color } = data;
-    const onePiece = document.createElement("div");
-    onePiece.style.width = `${grid}px`;
-    onePiece.style.height = `${grid}px`;
-    onePiece.style.backgroundColor = color;
-    onePiece.style.border = "1px solid black";
-    onePiece.style.gridColumnStart = col;
-    onePiece.style.gridRowStart = row;
-    onePiece.setAttribute("id", `currentPiece`);
-    gameGrid.current.appendChild(onePiece);
-  };
   const [intervalId, setIntervalId] = useState(-1);
+  const [drawingData, setDrawingData] = useState(null);
   const [instance, setInstance] = useState(
     new TetrisGame(
       () => {
         alert("game over");
       },
       (data) => {
-        drawPieceAt(data);
+        drawPieceAt(gameGrid, data);
       },
       () => {
         while (gameGrid.current.firstChild) {
@@ -44,23 +33,6 @@ const Tetris = () => {
       instance.startGame();
     }
   }, [gameGrid]);
-
-  class Mutex {
-    constructor(delay) {
-      this.delay = delay;
-      this.mutex = false;
-    }
-
-    trigger(callback) {
-      if (!this.mutex) {
-        this.mutex = true;
-        callback();
-        setTimeout(() => {
-          this.mutex = false;
-        }, this.delay);
-      }
-    }
-  }
 
   useEffect(() => {
     const mutex = new Mutex(10);
@@ -82,14 +54,7 @@ const Tetris = () => {
     };
   }, [instance]);
 
-  return (
-    <main id="main">
-      <Button onClick={() => clearInterval(intervalId)}>{"stop game"}</Button>
-      <div className="playground" id="playGround">
-        <div className="game-grid" id="gameGrid" ref={gameGrid}></div>
-      </div>
-    </main>
-  );
+  return <RenderTetris gameGridRef={gameGrid}>{drawingData}</RenderTetris>;
 };
 
 export default Tetris;
