@@ -16,6 +16,12 @@ export const drawPieceAt = (gameGrid, data) => {
   gameGrid.current.appendChild(onePiece);
 };
 
+export const clearGrid = (gameGrid) => {
+  while (gameGrid.current.firstChild) {
+    gameGrid.current.removeChild(gameGrid.current.firstChild);
+  }
+};
+
 export const RenderTetris = ({ children, gameGridRef }) => {
   return (
     <main id="main">

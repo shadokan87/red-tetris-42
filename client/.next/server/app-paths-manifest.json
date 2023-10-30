@@ -1,3 +1,4 @@
 {
-  "/tetris/page": "app/tetris/page.js"
+  "/tetris/page": "app/tetris/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }

@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import "./tetris.css";
 import { Tetris as TetrisGame } from "./tetris";
 import { Button } from "antd";
-import { RenderTetris, drawPieceAt } from "./RenderTetris";
+import { RenderTetris, clearGrid, drawPieceAt } from "./RenderTetris";
 import { Mutex } from "../utils";
 
 const keyStokes = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
@@ -21,9 +21,7 @@ const Tetris = () => {
         drawPieceAt(gameGrid, data);
       },
       () => {
-        while (gameGrid.current.firstChild) {
-          gameGrid.current.removeChild(gameGrid.current.firstChild);
-        }
+        clearGrid(gameGrid);
       }
     )
   );
