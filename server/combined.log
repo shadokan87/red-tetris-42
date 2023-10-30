@@ -1495,3 +1495,10 @@
 {"level":"info","message":"++++++++++++++++++++++++++=New client connected","service":"red-tetris_okay"}
 {"level":"info","message":"socket: user shinobi87 authenticated","service":"red-tetris_okay"}
 {"level":"info","message":"++++++++++++++++++++++++++=New client connected","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user shinobi87 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"++++++++++++++++++++++++++=New client connected","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user shinobi87 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"++++++++++++++++++++++++++=New client connected","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
