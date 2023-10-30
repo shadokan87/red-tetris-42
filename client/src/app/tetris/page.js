@@ -47,7 +47,7 @@ const Tetris = () => {
               gridRef.current.removeChild(gridRef.current.firstChild);
             }
           }
-        )
+        ).startGame()
       );
     }
   }, [gridRef]);
@@ -55,12 +55,6 @@ const Tetris = () => {
   useEffect(() => {
     console.log("++++++++++++++++++++_@__@");
   }, [gridRef]);
-
-  useEffect(() => {
-    if (instance) {
-      instance.startGame();
-    }
-  }, [instance]);
 
   // useEffect(() => {
   //   if (gridRef && gridRef.current && instance) {
