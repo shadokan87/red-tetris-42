@@ -1,21 +1,3 @@
-// const tetrominoSequence = [];
-
-// // keep track of what is in every cell of the game using a 2d array
-// // tetris playfield is 10x20, with a few rows offscreen
-// const playfield = [];
-
-// // populate the empty state
-// for (let row = -2; row < 20; row++) {
-//   playfield[row] = [];
-
-//   for (let col = 0; col < 10; col++) {
-//     playfield[row][col] = 0;
-//   }
-// }
-
-// tetris.js?87f6:252 Uncaught TypeError: Cannot read properties of undefined (reading '0')
-//     at loop (webpack-internal:///(app-pages-browser)/./src/app/tetris/tetris.js:251:35)
-
 // color of each tetromino
 const colors = {
   I: "cyan",
@@ -39,13 +21,57 @@ const initPlayField = () => {
   return result;
 };
 
-const printResult = (result) => {
-  for (let row = -2; row < 20; row++) {
-    for (let col = 0; col < 10; col++) {
-      console.log(result[row][col]);
-    }
+/**
+ * Class representing a Tetromino Dispenser.
+ * @param {function} callback - The function to call when a sequence is generated. This callback function is necessary to synchronize tetrominos between two players.
+ */
+export class TetrominoDispenser {
+  /**
+   * Create a Tetromino Dispenser.
+   * @param {function} callback - The function to call when a sequence is generated.
+   */
+  constructor(callback) {
+    this.callback = callback;
+    return this;
   }
-};
+  /**
+   * Get a random integer between min and max.
+   * @param {number} min - The minimum value.
+   * @param {number} max - The maximum value.
+   * @return {number} A random integer.
+   */
+  getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  /**
+   * Generate a sequence of Tetrominos.
+   * @return {Array} The generated sequence.
+   */
+  generateSequence() {
+    const sequence = ["I", "J", "L", "O", "S", "T", "Z"];
+    let result = [];
+
+    while (sequence.length) {
+      const rand = this.getRandomInt(0, sequence.length - 1);
+      const name = sequence.splice(rand, 1)[0];
+      result.push(name);
+    }
+    return result;
+  }
+  /**
+   * Dispense a sequence of Tetrominos.
+   * @return {TetrominoDispenser} The Tetromino Dispenser instance.
+   */
+  async dispense() {
+    const sequence = this.generateSequence();
+    this.callback(sequence);
+    return sequence;
+  }
+}
+
 const fps = 30;
 /**
  * Class representing a Tetris game.
@@ -99,6 +125,7 @@ export class Tetris {
   tetromino;
   intervalIds = -1;
   count = 0;
+  tetrominoDispenser;
 
   /**
    * Create a Tetris game.
@@ -110,6 +137,11 @@ export class Tetris {
     this.onGameOver = onGameOver;
     this.onDrawing = onDrawing;
     this.onTick = onTick;
+    return this;
+  }
+
+  setTetrominoDispenser(dispenser) {
+    this.tetrominoDispenser = dispenser;
     return this;
   }
 
@@ -164,26 +196,14 @@ export class Tetris {
     if (this.intervalIds[0] != -1) return -1;
     this.intervalIds.forEach((id) => clearInterval(id));
   }
-  getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
 
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-
-  generateSequence() {
-    const sequence = ["I", "J", "L", "O", "S", "T", "Z"];
-
-    while (sequence.length) {
-      const rand = this.getRandomInt(0, sequence.length - 1);
-      const name = sequence.splice(rand, 1)[0];
-      this.tetrominoSequence.push(name);
-    }
+  appendSequence(sequence) {
+    this.tetrominoSequence = [...this.tetrominoSequence, ...sequence];
   }
 
   getNextTetromino() {
     if (this.tetrominoSequence.length === 0) {
-      this.generateSequence();
+      this.tetrominoDispenser.dispense();
     }
 
     const name = this.tetrominoSequence.pop();
@@ -267,14 +287,11 @@ export class Tetris {
 
   loop() {
     this.onTick();
-    // context.clearRect(0, 0, canvas.width, canvas.height);
-
     // draw the this.playfield
     for (let row = 0; row < 20; row++) {
       for (let col = 0; col < 10; col++) {
         if (this.playfield[row][col]) {
           const name = this.playfield[row][col];
-          //   context.fillStyle = colors[name];
 
           // drawing 1 px smaller than the grid creates a grid effect
           this.onDrawing({
@@ -282,8 +299,6 @@ export class Tetris {
             col: col + 1,
             color: colors[name],
           });
-          //   drawPieceAt(row + 1, col + 1, colors[name]);
-          //   context.fillRect(col * grid, row * grid, grid - 1, grid - 1);
         }
       }
     }
@@ -348,11 +363,6 @@ export class Tetris {
               col: this.tetromino.col + col + 1,
               color: colors[this.tetromino.name],
             });
-            // drawPieceAt(
-            //   this.tetromino.row + row + 1,
-            //   this.tetromino.col + col + 1,
-            //   colors[this.tetromino.name]
-            // );
           }
         }
       }

@@ -9,6 +9,7 @@ import { message } from "antd";
 import axios from "axios";
 import { Form, Input, Checkbox } from "antd";
 import { roomSelector, setRoom } from "../redux/lobbyReducer";
+import { useRouter } from "next/navigation";
 
 const CreateRoomModal = ({ open, onCancel, onCreate }) => {
   const [form] = Form.useForm();
@@ -58,11 +59,18 @@ const CreateRoomModal = ({ open, onCancel, onCreate }) => {
 
 function Lobby() {
   const { axiosReady, axiosInstance } = useAxios();
+  const router = useRouter();
   const dispatch = useDispatch();
   const room = useSelector(roomSelector);
   const user = useSelector(userSelector);
   const [createRoom, setCreateRoom] = useState(false);
   const [messageApi, contextHolder] = message.useMessage();
+
+  useEffect(() => {
+    if (!room) return;
+    if (room.gameStarted) router.push("/tetris", undefined, { shallow: true });
+    console.log("new info", room);
+  }, [room]);
 
   const handleCancel = () => {
     setCreateRoom((prev) => !prev);
