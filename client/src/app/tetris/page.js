@@ -2,35 +2,30 @@
 import { useEffect, useRef, useState } from "react";
 import "./tetris.css";
 import { Tetris as TetrisGame, TetrominoDispenser } from "./tetris";
-import { Button } from "antd";
-import { RenderTetris, clearGrid, drawPieceAt } from "./RenderTetris";
+import { Button, Typography } from "antd";
+import {
+  RenderTetris,
+  clearGrid,
+  createPieceElement,
+  drawPieceAt,
+} from "./RenderTetris";
 import { Mutex } from "../utils";
 import { tokenSelector } from "../redux/sessionReducer";
 import { useSelector } from "react-redux";
 import { io } from "socket.io-client";
 import withAuth from "../withAuth";
+import { Flex } from "antd";
+import { GameInfo } from "./RenderTetris";
 
 const keyStokes = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
 
-const Tetris = () => {
-  const gameGrid = useRef(null);
-  const [intervalId, setIntervalId] = useState(-1);
-  const [drawingData, setDrawingData] = useState(null);
-  const [instance, setInstance] = useState(
-    new TetrisGame(
-      () => {
-        console.log("game over");
-      },
-      (data) => {
-        drawPieceAt(gameGrid, data);
-      },
-      () => {
-        clearGrid(gameGrid);
-      }
-    )
-  );
+const useTetrisClient = (gameGrid) => {
   const token = useSelector(tokenSelector);
   const [socket, setSocket] = useState(null);
+  const [score, setScore] = useState({
+    points: 0,
+    lineClears: 0,
+  });
 
   useEffect(() => {
     if (socket) {
@@ -40,48 +35,37 @@ const Tetris = () => {
     const newSocket = io("http://localhost:3000/game", {
       query: { token },
       reconnectionAttempts: 5,
-    });
+    })
+      .on("data", (data) => {
+        // console.log("data received", data);
+        clearGrid(gameGrid);
+        let pieces = [];
+        for (let i = 0; i < data.length; i++) {
+          pieces.push(createPieceElement(data[i]));
+        }
+        for (let i = 0; i < pieces.length; i++) {
+          gameGrid.current.appendChild(pieces[i]);
+        }
+      })
+      .on("score", (newScore) => setScore(newScore));
 
     setSocket(newSocket);
 
     return () => newSocket.disconnect();
   }, [token]);
 
-  // useEffect(() => {
-  //   if (!token) return;
-  //   if (socket) {
-  //     socket.disconnect();
-  //   }
-  //   {
-  //     alert("connection with " + token);
-  //     const newSocket = io("http://localhost:3000/game", {
-  //       query: { token },
-  //       reconnectionAttempts: 5,
-  //     });
+  return [socket, score];
+};
 
-  //     setSocket(newSocket);
-  //   }
-
-  //   return () => newSocket.disconnect();
-  // }, [token]);
-
-  useEffect(() => {
-    if (gameGrid && instance) {
-      const dispenser = new TetrominoDispenser((seqeunce) => {
-        instance.appendSequence(seqeunce);
-      });
-      instance.setTetrominoDispenser(dispenser).startGame();
-    }
-  }, [gameGrid]);
-
+const useControls = (socket) => {
   useEffect(() => {
     const mutex = new Mutex(10);
 
     const handleKeyDown = (e) => {
-      if (instance) {
+      if (socket) {
         if (keyStokes.includes(e.key)) {
           mutex.trigger(() => {
-            instance.RegisterKeyStroke(e.key);
+            socket.emit("RegisterKeyStroke", e.key);
           });
         }
       }
@@ -92,9 +76,30 @@ const Tetris = () => {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [instance]);
+  }, [socket]);
+};
 
-  return <RenderTetris gameGridRef={gameGrid}>{drawingData}</RenderTetris>;
+const Tetris = () => {
+  const gameGrid = useRef(null);
+  const [socket, score] = useTetrisClient(gameGrid);
+  useControls(socket);
+
+  return (
+    <>
+      <Flex justify={"center"} align="center" className="main" gap={"0.5em"}>
+        <RenderTetris gameGridRef={gameGrid} />
+        <Flex
+          justify="flex-start"
+          className="gameInfoSection"
+          vertical
+          gap={"0.5em"}
+        >
+          <GameInfo title={"score"} info={score.points} />
+          <GameInfo title={"line"} info={score.lineClears} />
+        </Flex>
+      </Flex>
+    </>
+  );
 };
 
 export default withAuth(Tetris);

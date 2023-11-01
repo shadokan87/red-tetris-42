@@ -1,12 +1,6 @@
-#main {
-  height: 100%;
-  margin: 0;
-  background: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.main {
+  height: calc(100vh - 2em);
 }
-
 .playground {
   height: 640px;
   width: 320px;
@@ -17,6 +11,17 @@
   grid-template-columns: repeat(10, 32px);
   grid-template-rows: repeat(20, 32px);
   border: 1px solid #ccc;
+}
+
+.gameInfo {
+  border: 1px solid #ccc;
+  padding: 1em;
+  height: auto;
+  max-height: 5em;
+}
+
+.gameInfoSection {
+  height: 640px;
 }
 
 .piece {

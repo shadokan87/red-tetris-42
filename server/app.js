@@ -1,3 +1,4 @@
+import { create } from "domain";
 import { authService } from "./services/auth";
 import { roomService } from "./services/room";
 import { userService } from "./services/user";
@@ -66,6 +67,7 @@ app.post(
       name: req.body.name,
       isPublic: req.body.isPublic,
       owner: req.user.id,
+      solo: req.body.solo,
       gameStarted: false,
     });
 
@@ -81,27 +83,44 @@ app.post("/game/start", verifyToken, async (req, res) => {
   if (!room) {
     return res.status(StatusCode.ClientErrorNotFound).send("Room not found");
   }
-  if (!("opponent" in room)) {
-    return res
-      .status(StatusCode.ClientErrorBadRequest)
-      .send("Game cannot start without an opponent");
-  }
-  const updatedRoom = services.room.update(req.user.id, (room) => {
-    return { ...room, gameStarted: true };
-  });
-  const result = {
+  logger.warn(`ROOM ${JSON.stringify(room)}`);
+  let result = {
     message: `game started`,
-    room: updatedRoom,
   };
-  const socketMap = socket.getSocketMap();
-  const io = socket.getIO();
-  [room.opponent, req.user.id].forEach((id) => {
-    const userInfo = socketMap.get(id);
-    if (userInfo) {
-      userInfo.socket.emit("roomUpdate", result);
-      logger.info("emit to" + id, result);
-    } else logger.info("cannot emit, not connected" + id);
-  });
+  if (room.solo) {
+    const updatedRoom = services.room.update(req.user.id, (room) => {
+      return { ...room, gameStarted: true };
+    });
+    result["room"] = updatedRoom;
+    const socketMap = socket.getSocketMap();
+    const io = socket.getIO();
+    [req.user.id].forEach((id) => {
+      const userInfo = socketMap.get(id);
+      if (userInfo) {
+        userInfo.socket.emit("roomUpdate", result);
+        logger.info("emit to" + id, result);
+      } else logger.info("cannot emit, not connected" + id);
+    });
+  } else {
+    if (!("opponent" in room)) {
+      return res
+        .status(StatusCode.ClientErrorBadRequest)
+        .send("Game cannot start without an opponent");
+    }
+    const updatedRoom = services.room.update(req.user.id, (room) => {
+      return { ...room, gameStarted: true };
+    });
+    result["room"] = updatedRoom;
+    const socketMap = socket.getSocketMap();
+    const io = socket.getIO();
+    [room.opponent, req.user.id].forEach((id) => {
+      const userInfo = socketMap.get(id);
+      if (userInfo) {
+        userInfo.socket.emit("roomUpdate", result);
+        logger.info("emit to" + id, result);
+      } else logger.info("cannot emit, not connected" + id);
+    });
+  }
   return res.status(StatusCode.SuccessOK).json(result);
 });
 

@@ -1722,3 +1722,889 @@
 {"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
 {"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
 {"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"_TEST_ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI","service":"red-tetris_okay"}
+{"level":"info","message":"HEADER {\"headers\":{\"host\":\"localhost:3000\",\"connection\":\"keep-alive\",\"accept\":\"*/*\",\"user-agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\"origin\":\"http://localhost:3001\",\"sec-fetch-mode\":\"cors\",\"sec-fetch-dest\":\"empty\",\"referer\":\"http://localhost:3001/\",\"accept-encoding\":\"gzip, deflate, br\",\"accept-language\":\"en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7\",\"sec-ch-ua\":\"\\\"Chromium\\\";v=\\\"104\\\", \\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Google Chrome\\\";v=\\\"104\\\"\",\"sec-ch-ua-mobile\":\"?0\",\"sec-ch-ua-platform\":\"\\\"Linux\\\"\",\"sec-fetch-site\":\"same-site\"},\"time\":\"Tue Oct 31 2023 21:07:24 GMT+0000 (Coordinated Universal Time)\",\"address\":\"::ffff:192.168.48.1\",\"xdomain\":true,\"secure\":false,\"issued\":1698786444217,\"url\":\"/socket.io/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI&EIO=4&transport=polling&t=Ok7a0DV\",\"query\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI\",\"EIO\":\"4\",\"transport\":\"polling\",\"t\":\"Ok7a0DV\"},\"auth\":{}}","service":"red-tetris_okay"}
+{"level":"info","message":"gameNamespace: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected to gameNamespace","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"info","message":"User disconnected from gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"_TEST_ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI","service":"red-tetris_okay"}
+{"level":"info","message":"HEADER {\"headers\":{\"host\":\"localhost:3000\",\"connection\":\"keep-alive\",\"accept\":\"*/*\",\"user-agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\"origin\":\"http://localhost:3001\",\"sec-fetch-mode\":\"cors\",\"sec-fetch-dest\":\"empty\",\"referer\":\"http://localhost:3001/\",\"accept-encoding\":\"gzip, deflate, br\",\"accept-language\":\"en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7\",\"sec-ch-ua\":\"\\\"Chromium\\\";v=\\\"104\\\", \\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Google Chrome\\\";v=\\\"104\\\"\",\"sec-ch-ua-mobile\":\"?0\",\"sec-ch-ua-platform\":\"\\\"Linux\\\"\",\"sec-fetch-site\":\"same-site\"},\"time\":\"Tue Oct 31 2023 21:13:16 GMT+0000 (Coordinated Universal Time)\",\"address\":\"::ffff:192.168.48.1\",\"xdomain\":true,\"secure\":false,\"issued\":1698786796365,\"url\":\"/socket.io/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI&EIO=4&transport=polling&t=Ok7bMBK\",\"query\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI\",\"EIO\":\"4\",\"transport\":\"polling\",\"t\":\"Ok7bMBK\"},\"auth\":{}}","service":"red-tetris_okay"}
+{"level":"info","message":"gameNamespace: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected to gameNamespace","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"User disconnected from gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"_TEST_ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI","service":"red-tetris_okay"}
+{"level":"info","message":"HEADER {\"headers\":{\"host\":\"localhost:3000\",\"connection\":\"keep-alive\",\"accept\":\"*/*\",\"user-agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\"origin\":\"http://localhost:3001\",\"sec-fetch-mode\":\"cors\",\"sec-fetch-dest\":\"empty\",\"referer\":\"http://localhost:3001/\",\"accept-encoding\":\"gzip, deflate, br\",\"accept-language\":\"en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7\",\"sec-ch-ua\":\"\\\"Chromium\\\";v=\\\"104\\\", \\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Google Chrome\\\";v=\\\"104\\\"\",\"sec-ch-ua-mobile\":\"?0\",\"sec-ch-ua-platform\":\"\\\"Linux\\\"\",\"sec-fetch-site\":\"same-site\"},\"time\":\"Tue Oct 31 2023 21:13:54 GMT+0000 (Coordinated Universal Time)\",\"address\":\"::ffff:192.168.48.1\",\"xdomain\":true,\"secure\":false,\"issued\":1698786834554,\"url\":\"/socket.io/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI&EIO=4&transport=polling&t=Ok7bVVs\",\"query\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI\",\"EIO\":\"4\",\"transport\":\"polling\",\"t\":\"Ok7bVVs\"},\"auth\":{}}","service":"red-tetris_okay"}
+{"level":"info","message":"gameNamespace: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected to gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"info","message":"User disconnected from gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"_TEST_ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI","service":"red-tetris_okay"}
+{"level":"info","message":"HEADER {\"headers\":{\"host\":\"localhost:3000\",\"connection\":\"keep-alive\",\"accept\":\"*/*\",\"user-agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\"origin\":\"http://localhost:3001\",\"sec-fetch-mode\":\"cors\",\"sec-fetch-dest\":\"empty\",\"referer\":\"http://localhost:3001/\",\"accept-encoding\":\"gzip, deflate, br\",\"accept-language\":\"en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7\",\"sec-ch-ua\":\"\\\"Chromium\\\";v=\\\"104\\\", \\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Google Chrome\\\";v=\\\"104\\\"\",\"sec-ch-ua-mobile\":\"?0\",\"sec-ch-ua-platform\":\"\\\"Linux\\\"\",\"sec-fetch-site\":\"same-site\"},\"time\":\"Tue Oct 31 2023 21:15:40 GMT+0000 (Coordinated Universal Time)\",\"address\":\"::ffff:192.168.48.1\",\"xdomain\":true,\"secure\":false,\"issued\":1698786940410,\"url\":\"/socket.io/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI&EIO=4&transport=polling&t=Ok7bvMk\",\"query\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI\",\"EIO\":\"4\",\"transport\":\"polling\",\"t\":\"Ok7bvMk\"},\"auth\":{}}","service":"red-tetris_okay"}
+{"level":"info","message":"gameNamespace: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected to gameNamespace","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"User disconnected from gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"info","message":"_TEST_ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI","service":"red-tetris_okay"}
+{"level":"info","message":"HEADER {\"headers\":{\"host\":\"localhost:3000\",\"connection\":\"keep-alive\",\"accept\":\"*/*\",\"user-agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\"origin\":\"http://localhost:3001\",\"sec-fetch-mode\":\"cors\",\"sec-fetch-dest\":\"empty\",\"referer\":\"http://localhost:3001/\",\"accept-encoding\":\"gzip, deflate, br\",\"accept-language\":\"en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7\",\"sec-ch-ua\":\"\\\"Chromium\\\";v=\\\"104\\\", \\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Google Chrome\\\";v=\\\"104\\\"\",\"sec-ch-ua-mobile\":\"?0\",\"sec-ch-ua-platform\":\"\\\"Linux\\\"\",\"sec-fetch-site\":\"same-site\"},\"time\":\"Tue Oct 31 2023 21:21:48 GMT+0000 (Coordinated Universal Time)\",\"address\":\"::ffff:192.168.48.1\",\"xdomain\":true,\"secure\":false,\"issued\":1698787308213,\"url\":\"/socket.io/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI&EIO=4&transport=polling&t=Ok7dJ9A\",\"query\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI\",\"EIO\":\"4\",\"transport\":\"polling\",\"t\":\"Ok7dJ9A\"},\"auth\":{}}","service":"red-tetris_okay"}
+{"level":"info","message":"gameNamespace: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected to gameNamespace","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"User disconnected from gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"_TEST_ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI","service":"red-tetris_okay"}
+{"level":"info","message":"HEADER {\"headers\":{\"host\":\"localhost:3000\",\"connection\":\"keep-alive\",\"accept\":\"*/*\",\"user-agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\"origin\":\"http://localhost:3001\",\"sec-fetch-mode\":\"cors\",\"sec-fetch-dest\":\"empty\",\"referer\":\"http://localhost:3001/\",\"accept-encoding\":\"gzip, deflate, br\",\"accept-language\":\"en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7\",\"sec-ch-ua\":\"\\\"Chromium\\\";v=\\\"104\\\", \\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Google Chrome\\\";v=\\\"104\\\"\",\"sec-ch-ua-mobile\":\"?0\",\"sec-ch-ua-platform\":\"\\\"Linux\\\"\",\"sec-fetch-site\":\"same-site\"},\"time\":\"Tue Oct 31 2023 21:22:55 GMT+0000 (Coordinated Universal Time)\",\"address\":\"::ffff:192.168.48.1\",\"xdomain\":true,\"secure\":false,\"issued\":1698787375921,\"url\":\"/socket.io/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI&EIO=4&transport=polling&t=Ok7dZg2\",\"query\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI\",\"EIO\":\"4\",\"transport\":\"polling\",\"t\":\"Ok7dZg2\"},\"auth\":{}}","service":"red-tetris_okay"}
+{"level":"info","message":"gameNamespace: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected to gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"User disconnected from gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"info","message":"_TEST_ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI","service":"red-tetris_okay"}
+{"level":"info","message":"HEADER {\"headers\":{\"host\":\"localhost:3000\",\"connection\":\"keep-alive\",\"accept\":\"*/*\",\"user-agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\"origin\":\"http://localhost:3001\",\"sec-fetch-mode\":\"cors\",\"sec-fetch-dest\":\"empty\",\"referer\":\"http://localhost:3001/\",\"accept-encoding\":\"gzip, deflate, br\",\"accept-language\":\"en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7\",\"sec-ch-ua\":\"\\\"Chromium\\\";v=\\\"104\\\", \\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Google Chrome\\\";v=\\\"104\\\"\",\"sec-ch-ua-mobile\":\"?0\",\"sec-ch-ua-platform\":\"\\\"Linux\\\"\",\"sec-fetch-site\":\"same-site\"},\"time\":\"Tue Oct 31 2023 21:23:07 GMT+0000 (Coordinated Universal Time)\",\"address\":\"::ffff:192.168.48.1\",\"xdomain\":true,\"secure\":false,\"issued\":1698787387254,\"url\":\"/socket.io/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI&EIO=4&transport=polling&t=Ok7dcSS\",\"query\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI\",\"EIO\":\"4\",\"transport\":\"polling\",\"t\":\"Ok7dcSS\"},\"auth\":{}}","service":"red-tetris_okay"}
+{"level":"info","message":"gameNamespace: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected to gameNamespace","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"info","message":"User disconnected from gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"_TEST_ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI","service":"red-tetris_okay"}
+{"level":"info","message":"HEADER {\"headers\":{\"host\":\"localhost:3000\",\"connection\":\"keep-alive\",\"accept\":\"*/*\",\"user-agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\"origin\":\"http://localhost:3001\",\"sec-fetch-mode\":\"cors\",\"sec-fetch-dest\":\"empty\",\"referer\":\"http://localhost:3001/\",\"accept-encoding\":\"gzip, deflate, br\",\"accept-language\":\"en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7\",\"sec-ch-ua\":\"\\\"Chromium\\\";v=\\\"104\\\", \\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Google Chrome\\\";v=\\\"104\\\"\",\"sec-ch-ua-mobile\":\"?0\",\"sec-ch-ua-platform\":\"\\\"Linux\\\"\",\"sec-fetch-site\":\"same-site\"},\"time\":\"Tue Oct 31 2023 21:23:18 GMT+0000 (Coordinated Universal Time)\",\"address\":\"::ffff:192.168.48.1\",\"xdomain\":true,\"secure\":false,\"issued\":1698787398908,\"url\":\"/socket.io/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI&EIO=4&transport=polling&t=Ok7dfG3\",\"query\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI\",\"EIO\":\"4\",\"transport\":\"polling\",\"t\":\"Ok7dfG3\"},\"auth\":{}}","service":"red-tetris_okay"}
+{"level":"info","message":"gameNamespace: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected to gameNamespace","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"info","message":"User disconnected from gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"_TEST_ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI","service":"red-tetris_okay"}
+{"level":"info","message":"HEADER {\"headers\":{\"host\":\"localhost:3000\",\"connection\":\"keep-alive\",\"accept\":\"*/*\",\"user-agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\"origin\":\"http://localhost:3001\",\"sec-fetch-mode\":\"cors\",\"sec-fetch-dest\":\"empty\",\"referer\":\"http://localhost:3001/\",\"accept-encoding\":\"gzip, deflate, br\",\"accept-language\":\"en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7\",\"sec-ch-ua\":\"\\\"Chromium\\\";v=\\\"104\\\", \\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Google Chrome\\\";v=\\\"104\\\"\",\"sec-ch-ua-mobile\":\"?0\",\"sec-ch-ua-platform\":\"\\\"Linux\\\"\",\"sec-fetch-site\":\"same-site\"},\"time\":\"Tue Oct 31 2023 21:23:45 GMT+0000 (Coordinated Universal Time)\",\"address\":\"::ffff:192.168.48.1\",\"xdomain\":true,\"secure\":false,\"issued\":1698787425158,\"url\":\"/socket.io/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI&EIO=4&transport=polling&t=Ok7dli1\",\"query\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI\",\"EIO\":\"4\",\"transport\":\"polling\",\"t\":\"Ok7dli1\"},\"auth\":{}}","service":"red-tetris_okay"}
+{"level":"info","message":"gameNamespace: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected to gameNamespace","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"User disconnected from gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"info","message":"_TEST_ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI","service":"red-tetris_okay"}
+{"level":"info","message":"HEADER {\"headers\":{\"host\":\"localhost:3000\",\"connection\":\"keep-alive\",\"accept\":\"*/*\",\"user-agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\"origin\":\"http://localhost:3001\",\"sec-fetch-mode\":\"cors\",\"sec-fetch-dest\":\"empty\",\"referer\":\"http://localhost:3001/\",\"accept-encoding\":\"gzip, deflate, br\",\"accept-language\":\"en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7\",\"sec-ch-ua\":\"\\\"Chromium\\\";v=\\\"104\\\", \\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Google Chrome\\\";v=\\\"104\\\"\",\"sec-ch-ua-mobile\":\"?0\",\"sec-ch-ua-platform\":\"\\\"Linux\\\"\",\"sec-fetch-site\":\"same-site\"},\"time\":\"Tue Oct 31 2023 21:24:04 GMT+0000 (Coordinated Universal Time)\",\"address\":\"::ffff:192.168.48.1\",\"xdomain\":true,\"secure\":false,\"issued\":1698787444517,\"url\":\"/socket.io/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI&EIO=4&transport=polling&t=Ok7dqOw\",\"query\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI\",\"EIO\":\"4\",\"transport\":\"polling\",\"t\":\"Ok7dqOw\"},\"auth\":{}}","service":"red-tetris_okay"}
+{"level":"info","message":"gameNamespace: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected to gameNamespace","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"User disconnected from gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"info","message":"_TEST_ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI","service":"red-tetris_okay"}
+{"level":"info","message":"HEADER {\"headers\":{\"host\":\"localhost:3000\",\"connection\":\"keep-alive\",\"accept\":\"*/*\",\"user-agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\"origin\":\"http://localhost:3001\",\"sec-fetch-mode\":\"cors\",\"sec-fetch-dest\":\"empty\",\"referer\":\"http://localhost:3001/\",\"accept-encoding\":\"gzip, deflate, br\",\"accept-language\":\"en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7\",\"sec-ch-ua\":\"\\\"Chromium\\\";v=\\\"104\\\", \\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Google Chrome\\\";v=\\\"104\\\"\",\"sec-ch-ua-mobile\":\"?0\",\"sec-ch-ua-platform\":\"\\\"Linux\\\"\",\"sec-fetch-site\":\"same-site\"},\"time\":\"Tue Oct 31 2023 21:24:19 GMT+0000 (Coordinated Universal Time)\",\"address\":\"::ffff:192.168.48.1\",\"xdomain\":true,\"secure\":false,\"issued\":1698787459559,\"url\":\"/socket.io/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI&EIO=4&transport=polling&t=Ok7du6B\",\"query\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI\",\"EIO\":\"4\",\"transport\":\"polling\",\"t\":\"Ok7du6B\"},\"auth\":{}}","service":"red-tetris_okay"}
+{"level":"info","message":"gameNamespace: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected to gameNamespace","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"info","message":"User disconnected from gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"_TEST_ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI","service":"red-tetris_okay"}
+{"level":"info","message":"HEADER {\"headers\":{\"host\":\"localhost:3000\",\"connection\":\"keep-alive\",\"accept\":\"*/*\",\"user-agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\"origin\":\"http://localhost:3001\",\"sec-fetch-mode\":\"cors\",\"sec-fetch-dest\":\"empty\",\"referer\":\"http://localhost:3001/\",\"accept-encoding\":\"gzip, deflate, br\",\"accept-language\":\"en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7\",\"sec-ch-ua\":\"\\\"Chromium\\\";v=\\\"104\\\", \\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Google Chrome\\\";v=\\\"104\\\"\",\"sec-ch-ua-mobile\":\"?0\",\"sec-ch-ua-platform\":\"\\\"Linux\\\"\",\"sec-fetch-site\":\"same-site\"},\"time\":\"Tue Oct 31 2023 21:25:19 GMT+0000 (Coordinated Universal Time)\",\"address\":\"::ffff:192.168.48.1\",\"xdomain\":true,\"secure\":false,\"issued\":1698787519094,\"url\":\"/socket.io/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI&EIO=4&transport=polling&t=Ok7e6d-\",\"query\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI\",\"EIO\":\"4\",\"transport\":\"polling\",\"t\":\"Ok7e6d-\"},\"auth\":{}}","service":"red-tetris_okay"}
+{"level":"info","message":"gameNamespace: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected to gameNamespace","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"User disconnected from gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"_TEST_ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI","service":"red-tetris_okay"}
+{"level":"info","message":"HEADER {\"headers\":{\"host\":\"localhost:3000\",\"connection\":\"keep-alive\",\"accept\":\"*/*\",\"user-agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\"origin\":\"http://localhost:3001\",\"sec-fetch-mode\":\"cors\",\"sec-fetch-dest\":\"empty\",\"referer\":\"http://localhost:3001/\",\"accept-encoding\":\"gzip, deflate, br\",\"accept-language\":\"en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7\",\"sec-ch-ua\":\"\\\"Chromium\\\";v=\\\"104\\\", \\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Google Chrome\\\";v=\\\"104\\\"\",\"sec-ch-ua-mobile\":\"?0\",\"sec-ch-ua-platform\":\"\\\"Linux\\\"\",\"sec-fetch-site\":\"same-site\"},\"time\":\"Tue Oct 31 2023 21:26:08 GMT+0000 (Coordinated Universal Time)\",\"address\":\"::ffff:192.168.48.1\",\"xdomain\":true,\"secure\":false,\"issued\":1698787568028,\"url\":\"/socket.io/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI&EIO=4&transport=polling&t=Ok7eIZa\",\"query\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI\",\"EIO\":\"4\",\"transport\":\"polling\",\"t\":\"Ok7eIZa\"},\"auth\":{}}","service":"red-tetris_okay"}
+{"level":"info","message":"gameNamespace: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected to gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"User disconnected from gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"solo","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"_TEST_ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI","service":"red-tetris_okay"}
+{"level":"info","message":"HEADER {\"headers\":{\"host\":\"localhost:3000\",\"connection\":\"keep-alive\",\"accept\":\"*/*\",\"user-agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\"origin\":\"http://localhost:3001\",\"sec-fetch-mode\":\"cors\",\"sec-fetch-dest\":\"empty\",\"referer\":\"http://localhost:3001/\",\"accept-encoding\":\"gzip, deflate, br\",\"accept-language\":\"en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7\",\"sec-ch-ua\":\"\\\"Chromium\\\";v=\\\"104\\\", \\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Google Chrome\\\";v=\\\"104\\\"\",\"sec-ch-ua-mobile\":\"?0\",\"sec-ch-ua-platform\":\"\\\"Linux\\\"\",\"sec-fetch-site\":\"same-site\"},\"time\":\"Tue Oct 31 2023 22:00:52 GMT+0000 (Coordinated Universal Time)\",\"address\":\"::ffff:192.168.48.1\",\"xdomain\":true,\"secure\":false,\"issued\":1698789652956,\"url\":\"/socket.io/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI&EIO=4&transport=polling&t=Ok7mFcw\",\"query\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI\",\"EIO\":\"4\",\"transport\":\"polling\",\"t\":\"Ok7mFcw\"},\"auth\":{}}","service":"red-tetris_okay"}
+{"level":"info","message":"gameNamespace: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected to gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"User disconnected from gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"info","message":"_TEST_ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI","service":"red-tetris_okay"}
+{"level":"info","message":"HEADER {\"headers\":{\"host\":\"localhost:3000\",\"connection\":\"keep-alive\",\"accept\":\"*/*\",\"user-agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36\",\"origin\":\"http://localhost:3001\",\"sec-fetch-mode\":\"cors\",\"sec-fetch-dest\":\"empty\",\"referer\":\"http://localhost:3001/\",\"accept-encoding\":\"gzip, deflate, br\",\"accept-language\":\"en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7\",\"sec-ch-ua\":\"\\\"Chromium\\\";v=\\\"104\\\", \\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Google Chrome\\\";v=\\\"104\\\"\",\"sec-ch-ua-mobile\":\"?0\",\"sec-ch-ua-platform\":\"\\\"Linux\\\"\",\"sec-fetch-site\":\"same-site\"},\"time\":\"Tue Oct 31 2023 22:04:16 GMT+0000 (Coordinated Universal Time)\",\"address\":\"::ffff:192.168.48.1\",\"xdomain\":true,\"secure\":false,\"issued\":1698789856495,\"url\":\"/socket.io/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI&EIO=4&transport=polling&t=Ok7n1H-\",\"query\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzaGlub2JpODciLCJwYXNzd29yZCI6IlNzaGlub2JpODcrKyIsImlhdCI6MTY5ODc2MTExOH0.nbtm_jQmWAge-xb3gBVZaEn9TTz4-i-RZm_Ncwv67lI\",\"EIO\":\"4\",\"transport\":\"polling\",\"t\":\"Ok7n1H-\"},\"auth\":{}}","service":"red-tetris_okay"}
+{"level":"info","message":"gameNamespace: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected to gameNamespace","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"User disconnected from gameNamespace","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"warn","message":"!!!!!!!!!!!!!!!! middle","service":"red-tetris_okay"}
+{"level":"info","message":"socket: user 1 authenticated","service":"red-tetris_okay"}
+{"level":"info","message":"User shinobi87 connected","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"Client disconnected","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okay","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] connected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okay","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okay","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, roo: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, roo: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, roo: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, roo: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, roo: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, roo: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cannot emit, not connected1","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cannot emit, not connected1","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okay","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okay","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okay","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okmay","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okmay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cannot emit, not connected1","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"gfhhfg","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"gfhhfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":1}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"sdf","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdf\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"dfgdfg","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"dfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":1}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":2,"isPublic":true,"name":"sdgdsr","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 2, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdgdsr\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":2}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":3,"isPublic":true,"name":"dsfgdfg","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 3, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"dsfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"sdfsdf","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"fdghfht","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"fdghfht\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"sdfsdf","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"ghjghkj","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"ghjghkj\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"gvhbjjgvhjj","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"gvhbjjgvhjj\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":1}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":2,"isPublic":true,"name":"vhbmbmv","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 2, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"vhbmbmv\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":2}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":3,"isPublic":true,"name":"sdgsdg","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 3, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdgsdg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":4,"isPublic":true,"name":"dsfgdf","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 4, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"dsfgdf\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":4}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"sdgdfg","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"dsgdfg","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"dsgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":1}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"dsfggdf","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"dsfggdf\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"dfgdfg","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"dfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":1}.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"jhkhjk","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"jhkhjk\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"sdfsdf","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":1}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":2,"isPublic":true,"name":"fdgdgfdgf","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 2, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"fdgdgfdgf\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":2}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":3,"isPublic":true,"name":"dfgdfg","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 3, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"dfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":4,"isPublic":true,"name":"dfgfd","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 4, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"dfgfd\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":4}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"dsffds","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"dsffds\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"sdfsdfsfd","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdfsdfsfd\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cannot emit, not connected1","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdgfsdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdgfsdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"fdggdf","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"fdggdf\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":1}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"fdggdf\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":1}.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"sdfsfdsfd","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdfsfdsfd\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"sdfsd","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdfsd\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":1}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"sdfgdsgf","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdfgdsgf\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cannot emit, not connected1","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"dfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"retydth","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"retydth\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"sdfsdffd","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdfsdffd\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cannot emit, not connected1","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"dsgdfg","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"dsgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"tgfhfgh","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"tgfhfgh\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"sdfsdf","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":1}.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"fdgdfgdfgdfg","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"fdgdfgdfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"gameStarted":false,"id":0,"isPublic":true,"level":"info","message":"!Result","name":"dfgdfg","owner":1,"service":"red-tetris_okay","solo":true}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"warn","message":"RESULT {\"name\":\"dfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"dfgdfg","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"dfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"Index: opponent","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsfdsfd\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"cannot emit, not connected1","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdfsfdsfd\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"mnbjk,njml\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"mnbjk,njml","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"mnbjk,njml\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"Index: {\"name\":\"mnbjk,njml\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"Index: {\"name\":\"mnbjk,njml\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"Index: {\"name\":\"mnbjk,njml\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"Index: {\"name\":\"mnbjk,njml\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdfsfd\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"sdfsdfsfd","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdfsdfsfd\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"ghjghjk\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"ghjghjk","owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"ghjghjk\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 shadokan87 has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"dfgdfgdfg","opponent":2,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shadokan87 has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"dfgdfgdfg","opponent":2,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":false,\"id\":0,\"opponent\":2}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"dfgdfgdfg","opponent":2,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"dfgdfgdfg","opponent":2,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":true,\"id\":0,\"opponent\":2}.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 shadokan87 has joined the room","room":{"gameStarted":false,"id":1,"isPublic":true,"name":"dfgdfgdfg","opponent":2,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shadokan87 has joined the room","room":{"gameStarted":false,"id":1,"isPublic":true,"name":"dfgdfgdfg","opponent":2,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":false,\"id\":1,\"opponent\":2}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"dfgdfgdfg","opponent":2,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"dfgdfgdfg","opponent":2,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":true,\"id\":1,\"opponent\":2}.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 shadokan87 has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"dfgdfgdfg","opponent":2,"owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shadokan87 has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"dfgdfgdfg","opponent":2,"owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":false,\"id\":0,\"opponent\":2}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"dfgdfgdfg","opponent":2,"owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0,\"opponent\":2}.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 shadokan87 has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"sdfsdfsdfsdf","opponent":2,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shadokan87 has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"sdfsdfsdfsdf","opponent":2,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdfsdfsdf\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":false,\"id\":0,\"opponent\":2}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"sdfsdfsdfsdf","opponent":2,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"sdfsdfsdfsdf","opponent":2,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdfsdfsdfsdf\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":true,\"id\":0,\"opponent\":2}.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 shadokan87 has joined the room","room":{"gameStarted":false,"id":0,"isPublic":false,"name":"sdfsdfsfd","opponent":2,"owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shadokan87 has joined the room","room":{"gameStarted":false,"id":0,"isPublic":false,"name":"sdfsdfsfd","opponent":2,"owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdfsfd\",\"isPublic\":false,\"owner\":1,\"solo\":true,\"gameStarted\":false,\"id\":0,\"opponent\":2}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":false,"name":"sdfsdfsfd","opponent":2,"owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdfsdfsfd\",\"isPublic\":false,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0,\"opponent\":2}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdfsfd\",\"isPublic\":false,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":0,\"opponent\":2}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 shadokan87 has joined the room","room":{"gameStarted":false,"id":1,"isPublic":true,"name":"sdgdfg","opponent":2,"owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shadokan87 has joined the room","room":{"gameStarted":false,"id":1,"isPublic":true,"name":"sdgdfg","opponent":2,"owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":false,\"id\":1,\"opponent\":2}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"sdgdfg","opponent":2,"owner":1,"solo":true},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"sdgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":1,\"opponent\":2}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":true,\"id\":1,\"opponent\":2}.","service":"red-tetris_okay"}
+{"level":"info","message":"cleared solo instance for shinobi87","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"vhbnbnkmbjn","opponent":1,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"vhbnbnkmbjn","opponent":1,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"vhbnbnkmbjn\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":false,\"id\":0,\"opponent\":1}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"vhbnbnkmbjn","opponent":1,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"vhbnbnkmbjn","opponent":1,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"vhbnbnkmbjn\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":true,\"id\":0,\"opponent\":1}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cannot emit, not connected1","service":"red-tetris_okay"}
+{"level":"info","message":"cannot emit, not connected2","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 shadokan87 has joined the room","room":{"gameStarted":false,"id":1,"isPublic":true,"name":"dfgdfg","opponent":2,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shadokan87 has joined the room","room":{"gameStarted":false,"id":1,"isPublic":true,"name":"dfgdfg","opponent":2,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":false,\"id\":1,\"opponent\":2}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"dfgdfg","opponent":2,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"dfgdfg","opponent":2,"owner":1,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"dfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":true,\"id\":1,\"opponent\":2}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"dfgdfg\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":true,\"id\":1,\"opponent\":2}.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}

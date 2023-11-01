@@ -52,6 +52,9 @@ const CreateRoomModal = ({ open, onCancel, onCreate }) => {
         <Form.Item name="isPublic" valuePropName="checked" initialValue={true}>
           <Checkbox>Public Room</Checkbox>
         </Form.Item>
+        <Form.Item name="solo" valuePropName="checked" initialValue={true}>
+          <Checkbox>Solo game</Checkbox>
+        </Form.Item>
       </Form>
     </Modal>
   );
@@ -104,26 +107,26 @@ function Lobby() {
   if (!user || !axiosReady) return <></>;
 
   const Actions = () => {
+    const canStartAction = (
+      <Button type={"primary"} onClick={() => handleStartGame()}>
+        {"Start game"}
+      </Button>
+    );
+    const shouldWaitAction = (
+      <Button
+        type={"dashed"}
+        disabled={true}
+        onClick={() => setCreateRoom(true)}
+      >
+        {"Waiting for opponent"}
+      </Button>
+    );
     if (!room) return <Typography>{"No room"}</Typography>;
-    else {
+    else if (!room.solo) {
       const opponentIsPresent = "opponent" in room;
-      if (opponentIsPresent)
-        return (
-          <Button type={"primary"} onClick={() => handleStartGame()}>
-            {"Start game"}
-          </Button>
-        );
-      else
-        return (
-          <Button
-            type={"dashed"}
-            disabled={true}
-            onClick={() => setCreateRoom(true)}
-          >
-            {"Waiting for opponent"}
-          </Button>
-        );
+      if (!opponentIsPresent) return shouldWaitAction;
     }
+    return canStartAction;
   };
 
   return (

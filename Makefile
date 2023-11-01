@@ -60,18 +60,18 @@ enter-client:
 
 .PHONY: log-server
 log-server:
-	@docker logs server -f
+	@docker logs --tail 100 server -f
 
 .PHONY: log-file_service
 log-file_service:
-	@docker logs file_service -f
+	@docker logs --tail 100 file_service -f
 
 .PHONY: log-db
 log-db:
-	@docker logs ${DB_NAME} -f
+	@docker logs --tail 100 ${DB_NAME} -f
 
 .PHONY: log-client
 log-client:
-	@docker logs client -f
+	@docker logs --tail 100 client -f
 
 

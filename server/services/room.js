@@ -45,6 +45,22 @@ export class roomService {
   }
 
   /**
+   * Check if a user is in a room.
+   * @param {string} userId - The ID of the user.
+   * @returns {object|undefined} - The room of the user if the user is in a room, undefined otherwise.
+   */
+  isInRoom(userId) {
+    const isOwner = this.get(userId);
+    if (isOwner) return isOwner;
+    for (let room of this.rooms.values()) {
+      if (room.opponent === userId) {
+        return room;
+      }
+    }
+    return undefined;
+  }
+
+  /**
    * Check if a room is crowded.
    * @param {string} ownerUserId - The ID of the user.
    * @returns {boolean} - True if the room is crowded, false otherwise.
