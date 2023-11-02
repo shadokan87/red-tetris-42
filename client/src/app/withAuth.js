@@ -33,17 +33,22 @@ const withAuth = (Component) => {
               remember: false,
             })
           );
-          dispatch(fetchAuthUser());
+          try {
+            dispatch(fetchAuthUser());
+            if (router.pathname == "/")
+              router.push("/lobby", undefined, { shallow: true });
+          } catch (e) {
+            alert("login failed");
+          }
         } else if (router.pathname !== "/signin") {
           router.push("/signin", undefined, { shallow: true });
         }
       } else {
         switch (router.pathname) {
-          case "/":
-          case "/lobby":
-            break;
+          // case "/signin":
+          //   router.push("/lobby", undefined, { shallow: true });
+          // break;
           default:
-            // router.push("/lobby", undefined, { shallow: true });
             break;
         }
       }

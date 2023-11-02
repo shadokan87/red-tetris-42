@@ -3,7 +3,7 @@ import { useContext, useEffect, useMemo, useState } from "react";
 import withAuth from "../withAuth";
 import { useDispatch, useSelector } from "react-redux";
 import { userSelector } from "../redux/sessionReducer";
-import { Button, Modal, Typography, Flex } from "antd";
+import { Button, Modal, Typography, Flex, Table } from "antd";
 import { useAxios } from "../contexts/axios";
 import { message } from "antd";
 import axios from "axios";
@@ -68,6 +68,16 @@ function Lobby() {
   const user = useSelector(userSelector);
   const [createRoom, setCreateRoom] = useState(false);
   const [messageApi, contextHolder] = message.useMessage();
+  const [publicRooms, setPublicRooms] = useState([]);
+  const roomTable = useMemo(() => {
+    if (!publicRooms.length) return [];
+    return publicRooms.map((r) => {
+      if (r.solo) r["members"] = "1/1";
+      else if (!("opponent" in r)) r["members"] = "1/2";
+      else r["members"] = "2/2";
+      return r;
+    });
+  }, [publicRooms]);
 
   useEffect(() => {
     if (!room) return;
@@ -76,6 +86,11 @@ function Lobby() {
     }
     console.log("new info", room);
   }, [room]);
+
+  useEffect(() => {
+    if (!axiosReady) return;
+    fetchRooms();
+  }, [axiosReady, axiosInstance]);
 
   const handleCancel = () => {
     setCreateRoom((prev) => !prev);
@@ -93,6 +108,26 @@ function Lobby() {
       messageApi.error("Failed to create room");
     }
     setCreateRoom((prev) => !prev);
+  };
+
+  const joinRoom = async (room) => {
+    try {
+      const user = await axiosInstance.get(`/user/${room.owner}`);
+      router.push(`/#${room.name}[${user.data.displayname}]`, undefined, {
+        shallow: true,
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const fetchRooms = async () => {
+    try {
+      const response = await axiosInstance.get("/game/rooms/allPublic");
+      setPublicRooms(response.data);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   const handleStartGame = async () => {
@@ -131,6 +166,19 @@ function Lobby() {
     return canStartAction;
   };
 
+  const columns = [
+    {
+      title: "Room Name",
+      dataIndex: "name",
+      key: "name",
+    },
+    {
+      title: "Members",
+      dataIndex: "members",
+      key: "members",
+    },
+  ];
+
   return (
     <main>
       {contextHolder}
@@ -144,6 +192,17 @@ function Lobby() {
       <Button type={"primary"} onClick={() => setCreateRoom(true)}>
         {"Create room"}
       </Button>
+      <Table
+        onRow={(record, rowIndex) => {
+          return {
+            onClick: async (event) => {
+              await joinRoom(record);
+            },
+          };
+        }}
+        columns={columns}
+        dataSource={roomTable}
+      />
       <Actions />
     </main>
   );

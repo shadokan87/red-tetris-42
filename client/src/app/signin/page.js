@@ -38,7 +38,10 @@ function Signin() {
               remember: rememberMe,
             })
           );
-          dispatch(fetchAuthUser());
+          try {
+            dispatch(fetchAuthUser());
+            router.push("/lobby", undefined, { shallow: true });
+          } catch (e) {}
           console.log("login response", response);
         })
         .catch((e) => {

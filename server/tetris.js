@@ -135,7 +135,6 @@ export class Tetris {
    * @param {function} onDrawing - The function to call when drawing the game.
    */
   constructor(onGameOver, onDrawing, onScoreUpdate) {
-    console.log("++++++++++ Tetris init");
     this.onGameOver = onGameOver;
     this.onDrawing = onDrawing;
     this.onScoreUpdate = onScoreUpdate;

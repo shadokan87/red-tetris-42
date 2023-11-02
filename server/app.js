@@ -124,41 +124,69 @@ app.post("/game/start", verifyToken, async (req, res) => {
   return res.status(StatusCode.SuccessOK).json(result);
 });
 
-app.post("/game/room/join/:displayname", verifyToken, async (req, res) => {
-  const displayname = req.params.displayname;
-  if (!displayname) {
-    return res
-      .status(StatusCode.ClientErrorBadRequest)
-      .send("Bad Request: displayname is required");
+app.post(
+  "/game/room/join/:displayname/:name",
+  verifyToken,
+  async (req, res) => {
+    const displayname = req.params.displayname;
+    const name = req.params.name;
+    if (!displayname || !name) {
+      return res
+        .status(StatusCode.ClientErrorBadRequest)
+        .send("Bad Request: name and displayname are required");
+    }
+    const user = await services.user.findByDisplayName(displayname);
+    if (!user) {
+      return res.status(StatusCode.ClientErrorNotFound).send("User not found");
+    }
+    if (!services.room.exist(user.id)) {
+      return res
+        .status(StatusCode.ClientErrorNotFound)
+        .send("Room does not exist");
+    }
+    const room = services.room.get(user.id);
+    const isAlreadyInRoom = "opponent" in room && room.opponent == req.user.id;
+    if (isAlreadyInRoom)
+      return res.status(StatusCode.SuccessOK).json({
+        message: "Room joined successfully",
+        room,
+      });
+
+    if (room.name != name) {
+      return res
+        .status(StatusCode.ClientErrorNotFound)
+        .send("Room does not exist");
+    }
+    if (services.room.isRoomCrowded(user.id)) {
+      return res
+        .status(StatusCode.ClientErrorBadRequest)
+        .send("Room is crowded");
+    }
+
+    const updatedRoom = services.room.addMember(user.id, req.user.id);
+    const result = {
+      message: `${req.user.displayname} has joined the room`,
+      room: updatedRoom,
+    };
+    const socketMap = socket.getSocketMap();
+    const io = socket.getIO();
+    [user.id, req.user.id].forEach((id) => {
+      const userInfo = socketMap.get(id);
+      if (userInfo) {
+        userInfo.socket.emit("roomUpdate", result);
+        logger.info("emit to" + id, result);
+      } else logger.info("cannot emit, not connected" + id);
+    });
+    return res.status(StatusCode.SuccessOK).json(result);
   }
-  const user = await services.user.findByDisplayName(displayname);
+);
+app.get("/user/:id", async (req, res) => {
+  const id = Number(req.params.id);
+  const user = await services.user.findById(id);
   if (!user) {
     return res.status(StatusCode.ClientErrorNotFound).send("User not found");
   }
-  if (!services.room.exist(user.id)) {
-    return res
-      .status(StatusCode.ClientErrorNotFound)
-      .send("Room does not exist");
-  }
-  if (services.room.isRoomCrowded(user.id)) {
-    return res.status(StatusCode.ClientErrorBadRequest).send("Room is crowded");
-  }
-
-  const updatedRoom = services.room.addMember(user.id, req.user.id);
-  const result = {
-    message: `${req.user.displayname} has joined the room`,
-    room: updatedRoom,
-  };
-  const socketMap = socket.getSocketMap();
-  const io = socket.getIO();
-  [user.id, req.user.id].forEach((id) => {
-    const userInfo = socketMap.get(id);
-    if (userInfo) {
-      userInfo.socket.emit("roomUpdate", result);
-      logger.info("emit to" + id, result);
-    } else logger.info("cannot emit, not connected" + id);
-  });
-  return res.status(StatusCode.SuccessOK).json(result);
+  return res.status(StatusCode.SuccessOK).json(user);
 });
 
 app.get("/game/room/:userId?", verifyToken, async (req, res) => {
@@ -168,6 +196,11 @@ app.get("/game/room/:userId?", verifyToken, async (req, res) => {
     return res.status(StatusCode.ClientErrorNotFound).send("Room not found");
   }
   return res.status(StatusCode.SuccessOK).json(room);
+});
+
+app.get("/game/rooms/allPublic", verifyToken, async (req, res) => {
+  const rooms = await services.room.getAllPublicRooms();
+  return res.status(StatusCode.SuccessOK).json(rooms);
 });
 
 app.delete("/game/room/delete", verifyToken, async (req, res, next) => {

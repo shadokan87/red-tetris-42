@@ -45,6 +45,20 @@ export class roomService {
   }
 
   /**
+   * Get all public rooms.
+   * @returns {Array} - The list of public rooms.
+   */
+  getAllPublicRooms() {
+    const publicRooms = [];
+    for (let room of this.rooms.values()) {
+      if (room.isPublic) {
+        publicRooms.push(room);
+      }
+    }
+    return publicRooms;
+  }
+
+  /**
    * Check if a user is in a room.
    * @param {string} userId - The ID of the user.
    * @returns {object|undefined} - The room of the user if the user is in a room, undefined otherwise.

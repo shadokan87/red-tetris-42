@@ -20,7 +20,6 @@ export class authService {
   async verify(token) {
     try {
       const decoded = jwt.verify(token, this.secretKey);
-      console.log("!decoded", decoded);
       return decoded;
     } catch (err) {
       return null;
