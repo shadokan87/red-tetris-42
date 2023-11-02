@@ -153,7 +153,6 @@ export class Tetris {
 
   ExecuteKeyStroke() {
     if (!this.keyStroke.length) return;
-    console.log("need to execute", this.keyStroke);
     const key = this.keyStroke.pop();
     switch (key) {
       case "ArrowLeft":
@@ -195,8 +194,10 @@ export class Tetris {
     return this;
   }
   stopGame() {
-    if (this.intervalIds[0] != -1) return -1;
+    if (this.intervalIds[0] == -1) return -1;
     this.intervalIds.forEach((id) => clearInterval(id));
+    this.intervalIds = [-1, -1];
+    return 1;
   }
 
   appendSequence(sequence) {
@@ -263,6 +264,7 @@ export class Tetris {
           // game over if piece has any part offscreen
           if (this.tetromino.row + row < 0) {
             if (this.stopGame() == -1) return;
+            console.log("[GAMEOVER]");
             return this.onGameOver();
           }
 

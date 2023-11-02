@@ -71,7 +71,9 @@ function Lobby() {
 
   useEffect(() => {
     if (!room) return;
-    if (room.gameStarted) router.push("/tetris", undefined, { shallow: true });
+    if (room.gameStarted) {
+      router.push("/tetris", undefined, { shallow: true });
+    }
     console.log("new info", room);
   }, [room]);
 

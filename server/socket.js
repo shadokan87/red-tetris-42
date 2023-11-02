@@ -30,26 +30,38 @@ const getSocketGame = (socket) => {
 
 const endVersusGame = (socket) => {
   const socketGame = getSocketGame(socket);
+  logger.warn("BR1");
   if (!socketGame) return;
+  logger.warn("BR2");
   const allInstances = [
     socketGame.instance.owner,
     socketGame.instance.opponent,
   ];
-  // const allLobbySocket = [
-  //   socketInfo.get(socketGame.room.owner),
-  //   socketInfo.get(socketGame.room.opponent),
-  // ];
+  const ownerLobbySocket = socketInfo.get(socketGame.room.owner);
+  const opponentLobbySocket = socketInfo.get(socketGame.room.opponent);
+  const allLobbySocket = [
+    (ownerLobbySocket && ownerLobbySocket.socket) || undefined,
+    (opponentLobbySocket && opponentLobbySocket.socket) || undefined,
+  ];
   // const updatedRoom =
   const opponentUserId =
     socketGame.room.owner == socketGame.userInfo.user.id
       ? socketGame.room.opponent
       : socketGame.room.owner;
   const opponentSocket = gameNamespaceInfo.get(opponentUserId);
-  const allSocket = [socket, opponentSocket];
-  allInstances.map((i) => i.stopGame());
-  allSocket.map((s) => {
-    s.emit("gameOver");
+  const allSocket = [socket, opponentSocket.socket];
+  allInstances.forEach((i) => i.stopGame());
+  allSocket.forEach((s) => {
+    s && s.emit("gameOver");
   });
+  const updatedRoom = services.room.update(socketGame.room.owner, (room) => {
+    return { ...room, gameStarted: false };
+  });
+  allLobbySocket.forEach(
+    (s) =>
+      s && s.emit("roomUpdate", { message: "game ended", room: updatedRoom })
+  );
+  tetrisInstances.delete(socketGame.room.id);
 };
 
 module.exports = {
@@ -126,7 +138,7 @@ module.exports = {
           const firstInstance = new Tetris(
             () => {
               logger.info(`Tetris: gameOver for ${userInfo.user.username}`);
-              tetrisInstances.delete(room.id);
+              endVersusGame(socket);
             },
             (drawingData) => {
               socket.volatile.emit("data", drawingData);
@@ -144,7 +156,7 @@ module.exports = {
         const secondInstance = new Tetris(
           () => {
             logger.info(`Tetris: gameOver for ${userInfo.user.username}`);
-            tetrisInstances.delete(room.id);
+            endVersusGame(socket);
           },
           (drawingData) => {
             socket.volatile.emit("data", drawingData);

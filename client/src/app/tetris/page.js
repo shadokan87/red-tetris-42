@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import "./tetris.css";
-import { Tetris as TetrisGame, TetrominoDispenser } from "./tetris";
 import { Button, Typography } from "antd";
 import {
   RenderTetris,
@@ -16,10 +15,12 @@ import { io } from "socket.io-client";
 import withAuth from "../withAuth";
 import { Flex } from "antd";
 import { GameInfo } from "./RenderTetris";
+import { useRouter } from "next/navigation";
 
 const keyStokes = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
 
 const useTetrisClient = (gameGrid) => {
+  const router = useRouter();
   const token = useSelector(tokenSelector);
   const [socket, setSocket] = useState(null);
   const [score, setScore] = useState({
@@ -47,7 +48,10 @@ const useTetrisClient = (gameGrid) => {
           gameGrid.current.appendChild(pieces[i]);
         }
       })
-      .on("score", (newScore) => setScore(newScore));
+      .on("score", (newScore) => setScore(newScore))
+      .on("gameOver", () =>
+        router.push("/lobby", undefined, { shallow: true })
+      );
 
     setSocket(newSocket);
 
@@ -82,11 +86,17 @@ const useControls = (socket) => {
 const Tetris = () => {
   const gameGrid = useRef(null);
   const [socket, score] = useTetrisClient(gameGrid);
+  const router = useRouter();
   useControls(socket);
 
   return (
     <>
       <Flex justify={"center"} align="center" className="main" gap={"0.5em"}>
+        <Button
+          onClick={() => router.push("/lobby", undefined, { shallow: true })}
+        >
+          {"Return to lobby"}
+        </Button>
         <RenderTetris gameGridRef={gameGrid} />
         <Flex
           justify="flex-start"
