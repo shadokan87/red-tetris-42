@@ -5,7 +5,7 @@ import withAuth from "./withAuth";
 import { useAxios } from "./contexts/axios";
 import { useDispatch, useSelector } from "react-redux";
 import { roomSelector, setRoom } from "./redux/lobbyReducer";
-import { Typography, Flex, Divider } from "antd";
+import { Typography, Flex, Divider, Button } from "antd";
 import Link from "next/link";
 import "./root.css";
 import { userSelector } from "./redux/sessionReducer";
@@ -22,6 +22,7 @@ const parseRoomUrl = (url) => {
 
 const fetchUserById = async (_axios, id) => {
   try {
+    if (!id) return undefined;
     const response = await _axios.get(`/user/${id}`);
     console.log("!fetch result", response);
     return response.data;
@@ -49,7 +50,6 @@ const useRoomMembers = (room) => {
 };
 
 const UserLink = ({ user }) => {
-  console.log("!user is: ", user);
   return (
     <>
       <Flex gap={"0.5em"}>
@@ -65,15 +65,17 @@ const UserLink = ({ user }) => {
 const OneMember = ({ room, member, ownerActions }) => {
   return (
     <div className="oneMember">
-      <UserLink user={member}></UserLink>
-      {ownerActions}
+      <Flex gap={"0.5em"}>
+        <UserLink user={member}></UserLink>
+        {ownerActions}
+      </Flex>
     </div>
   );
 };
 
 const RenderRoomMembers = ({ room, owner, opponent, ownerActions }) => {
   const user = useSelector(userSelector);
-  const isOwner = user.id == owner;
+  const isOwner = user.id == owner.id;
   return (
     <>
       <Flex vertical className="membersWrapper">
@@ -83,7 +85,7 @@ const RenderRoomMembers = ({ room, owner, opponent, ownerActions }) => {
           <OneMember
             room={room}
             member={opponent}
-            ownerActions={isOwner ? ownerActions : undefined}
+            ownerActions={(isOwner && ownerActions()) || undefined}
           />
         )) || <Typography>{"Waiting for opponent"}</Typography>}
       </Flex>
@@ -102,10 +104,6 @@ function Home() {
   //   console.log("Owner:", owner);
   //   console.log("Opponent:", opponent);
   // }, [owner, opponent]);
-
-  const handleKickOpponent = async () => {
-    console.log("kick user: " + opponent.displayname);
-  };
 
   useEffect(() => {
     if (!axiosReady) return;
@@ -129,19 +127,36 @@ function Home() {
     }
   }, [window.location, axiosReady]);
 
-  const ownerActions = () => (
-    <Button onClick={async () => await handleKickOpponent()}></Button>
+  const handleKickOpponent = async () => {
+    console.log("kick user: " + opponent.displayname);
+  };
+
+  const OwnerActions = () => (
+    <Button type="primary" onClick={async () => await handleKickOpponent()}>
+      {"kick"}
+    </Button>
   );
+
+  const MemberFooterActions = () => {
+    return (
+      <Button type="primary" onClick={async () => await handleKickOpponent()}>
+        {"kick"}
+      </Button>
+    );
+  };
 
   if (room && owner)
     return (
       <main className="main">
-        <RenderRoomMembers
-          room={room}
-          owner={owner}
-          opponent={opponent}
-          onerActions={ownerActions}
-        />
+        <Flex vertical gap={"0.5em"}>
+          <RenderRoomMembers
+            room={room}
+            owner={owner}
+            opponent={opponent}
+            ownerActions={OwnerActions}
+          />
+          <MemberFooterActions />
+        </Flex>
       </main>
     );
   return <main>{"...veryfing room"}</main>;

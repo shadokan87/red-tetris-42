@@ -123,6 +123,15 @@ app.post("/game/start", verifyToken, async (req, res) => {
   }
   return res.status(StatusCode.SuccessOK).json(result);
 });
+app.post("/game/room/setReady", verifyToken, async (req, res) => {
+  const room = services.room.isInRoom(req.user.id);
+  if (!room) {
+    return res
+      .status(StatusCode.ClientErrorNotFound)
+      .send("Room does not exist");
+  }
+  // Your code here
+});
 
 app.post(
   "/game/room/join/:displayname/:name",
@@ -145,7 +154,9 @@ app.post(
         .send("Room does not exist");
     }
     const room = services.room.get(user.id);
-    const isAlreadyInRoom = "opponent" in room && room.opponent == req.user.id;
+    const isAlreadyInRoom =
+      ("opponent" in room && room.opponent == req.user.id) ||
+      room.owner == req.user.id;
     if (isAlreadyInRoom)
       return res.status(StatusCode.SuccessOK).json({
         message: "Room joined successfully",

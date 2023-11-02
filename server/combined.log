@@ -3218,3 +3218,15 @@
 {"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
 {"level":"info","message":"cannot emit, not connected2","service":"red-tetris_okay"}
 {"level":"info","message":"emit to1 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":1,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shadokan87 has joined the room","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":2,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shadokan87 has joined the room","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":2,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":1,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"cannot emit, not connected1","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
