@@ -24,6 +24,7 @@ const keyStokes = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
 const useTetrisClient = (gameGrid) => {
   const router = useRouter();
   const room = useSelector(roomSelector);
+  const [owner, opponent] = useRoomMembers(room);
   const token = useSelector(tokenSelector);
   const [socket, setSocket] = useState(null);
   const [score, setScore] = useState({
@@ -32,6 +33,7 @@ const useTetrisClient = (gameGrid) => {
   });
 
   useEffect(() => {
+    if (!owner) return;
     if (socket) {
       socket.disconnect();
     }
@@ -41,7 +43,6 @@ const useTetrisClient = (gameGrid) => {
       reconnectionAttempts: 5,
     })
       .on("data", (data) => {
-        // console.log("data received", data);
         clearGrid(gameGrid);
         let pieces = [];
         for (let i = 0; i < data.length; i++) {
@@ -52,29 +53,16 @@ const useTetrisClient = (gameGrid) => {
         }
       })
       .on("score", (newScore) => setScore(newScore))
-      .on(
-        "gameOver",
-        () => {
-          const redirectUrl = router.query.redirect;
-          if (redirectUrl) {
-            router.push(`/${redirectUrl}`, undefined, {
-              shallow: true,
-            });
-          } else {
-            router.push(`/lobby`, undefined, {
-              shallow: true,
-            });
-          }
-        }
-        // router.push(`/#${room.name}[${owner.displayname}]`, undefined, {
-        //   shallow: true,
-        // })
-      );
+      .on("gameOver", () => {
+        router.push(`/#${room.name}[${owner.displayname}]`, undefined, {
+          shallow: true,
+        });
+      });
 
     setSocket(newSocket);
 
     return () => newSocket.disconnect();
-  }, [token, room]);
+  }, [token, room, owner]);
 
   return [socket, score];
 };

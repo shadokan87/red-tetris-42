@@ -4098,3 +4098,605 @@
 {"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
 {"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
 {"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":false,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":false,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":false,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":false,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":false,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":false,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shinobi has joined the room","room":{"gameStarted":false,"id":1,"isPublic":true,"name":"okay","opponent":3,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 shinobi has joined the room","room":{"gameStarted":false,"id":1,"isPublic":true,"name":"okay","opponent":3,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":1,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":1,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":1,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":1,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":1,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":1,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":false,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":false,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shinobi has joined the room","room":{"gameStarted":false,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":false,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 shinobi has joined the room","room":{"gameStarted":false,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":false,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":1,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":1,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":1,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":false,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":1,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":1,"isPublic":"true","name":"okay","opponent":3,"opponentReady":true,"owner":2},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 1, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":true,\"opponentReady\":true,\"id\":1,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 2","service":"red-tetris_okay"}
+{"level":"info","message":"!SET_USER 3","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to3 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"okay","opponent":3,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":true,\"opponentReady\":true,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shinobi87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"info","message":"No tetris instance for room: 0, creating one.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shinobi87 connected, room: {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":false,\"id\":0,\"opponent\":3}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"Tetris: gameOver for shadokan87","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
