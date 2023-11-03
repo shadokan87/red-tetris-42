@@ -16,11 +16,14 @@ import withAuth from "../withAuth";
 import { Flex } from "antd";
 import { GameInfo } from "./RenderTetris";
 import { useRouter } from "next/navigation";
+import { roomSelector } from "../redux/lobbyReducer";
+import { useRoomMembers } from "../page";
 
 const keyStokes = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
 
 const useTetrisClient = (gameGrid) => {
   const router = useRouter();
+  const room = useSelector(roomSelector);
   const token = useSelector(tokenSelector);
   const [socket, setSocket] = useState(null);
   const [score, setScore] = useState({
@@ -49,14 +52,29 @@ const useTetrisClient = (gameGrid) => {
         }
       })
       .on("score", (newScore) => setScore(newScore))
-      .on("gameOver", () =>
-        router.push("/lobby", undefined, { shallow: true })
+      .on(
+        "gameOver",
+        () => {
+          const redirectUrl = router.query.redirect;
+          if (redirectUrl) {
+            router.push(`/${redirectUrl}`, undefined, {
+              shallow: true,
+            });
+          } else {
+            router.push(`/lobby`, undefined, {
+              shallow: true,
+            });
+          }
+        }
+        // router.push(`/#${room.name}[${owner.displayname}]`, undefined, {
+        //   shallow: true,
+        // })
       );
 
     setSocket(newSocket);
 
     return () => newSocket.disconnect();
-  }, [token]);
+  }, [token, room]);
 
   return [socket, score];
 };
@@ -92,11 +110,6 @@ const Tetris = () => {
   return (
     <>
       <Flex justify={"center"} align="center" className="main" gap={"0.5em"}>
-        <Button
-          onClick={() => router.push("/lobby", undefined, { shallow: true })}
-        >
-          {"Return to lobby"}
-        </Button>
         <RenderTetris gameGridRef={gameGrid} />
         <Flex
           justify="flex-start"

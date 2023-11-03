@@ -313,6 +313,13 @@ export class Tetris {
     this.tetromino = this.getNextTetromino();
   }
 
+  getScore() {
+    return {
+      points: this.score,
+      lineClears: this.totalLineClear,
+    };
+  }
+
   loop() {
     let piece = [];
     // draw the this.playfield

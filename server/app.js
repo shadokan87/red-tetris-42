@@ -2,6 +2,7 @@ import { create } from "domain";
 import { authService } from "./services/auth";
 import { roomService } from "./services/room";
 import { userService } from "./services/user";
+import { gameService } from "./services/game";
 import { validateRoomCreation, verifyToken } from "./validators/index";
 
 const { env } = process;
@@ -53,6 +54,7 @@ function addService(name, newService, ...dependencies) {
 }
 
 addService("user", userService, prisma);
+addService("game", gameService, prisma);
 addService("room", roomService);
 addService("auth", authService, prisma, services["user"], env.JWT_SECRET);
 
@@ -143,7 +145,10 @@ app.post("/game/room/status/ready", verifyToken, async (req, res) => {
     if (userInfo) {
       userInfo.socket.emit("roomUpdate", result);
       logger.info("emit to" + id, result);
-    } else logger.info("cannot emit, not connected" + id);
+    } else {
+      logger.info("cannot emit, not connected" + id);
+      logger.info(`SocketMap keys: ${Array.from(socketMap.keys())}`);
+    }
   });
   return res.status(StatusCode.SuccessOK).json(result);
 });

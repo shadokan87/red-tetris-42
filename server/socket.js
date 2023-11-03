@@ -37,6 +37,28 @@ const endVersusGame = (socket) => {
     socketGame.instance.owner,
     socketGame.instance.opponent,
   ];
+  let scores = allInstances.map((s) => s.getScore());
+  scores[0].points = 100;
+  const noWinner = scores[0].points == 0 && scores[1].points == 0;
+  let savedGame = undefined;
+
+  if (!noWinner) {
+    const winnerId =
+      scores[0].points > scores[1].points
+        ? socketGame.room.owner
+        : socketGame.room.opponent;
+    try {
+      (async () =>
+        (savedGame = await services.game.saveVersusGame(
+          socketGame.room.owner,
+          socketGame.room.opponent,
+          scores,
+          winnerId
+        )))();
+    } catch (error) {
+      console.error("ERR_SAVE_GAME", error);
+    }
+  }
   const ownerLobbySocket = socketInfo.get(socketGame.room.owner);
   const opponentLobbySocket = socketInfo.get(socketGame.room.opponent);
   const allLobbySocket = [
@@ -55,11 +77,15 @@ const endVersusGame = (socket) => {
     s && s.emit("gameOver");
   });
   const updatedRoom = services.room.update(socketGame.room.owner, (room) => {
-    return { ...room, gameStarted: false };
+    return { ...room, gameStarted: false, opponentReady: false };
   });
   allLobbySocket.forEach(
     (s) =>
-      s && s.emit("roomUpdate", { message: "game ended", room: updatedRoom })
+      s &&
+      s.emit("roomUpdate", {
+        message: "game ended",
+        room: updatedRoom,
+      })
   );
   tetrisInstances.delete(socketGame.room.id);
 };
@@ -79,6 +105,7 @@ module.exports = {
     io.use(async (socket, next) => {
       const token = socket.handshake.query.token;
       const user = await services.auth.verify(token);
+      logger.info(`!SET_USER ${user.id}`);
       if (user) {
         socketInfo.set(user.id, {
           user,

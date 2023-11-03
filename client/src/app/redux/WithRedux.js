@@ -22,7 +22,7 @@ const SocketHandler = ({ children }) => {
     });
 
     newSocket.on("roomUpdate", (data) => {
-      // console.log("roomUpdate", data);
+      console.warn("roomUpdate", data);
       dispatch(setRoom(data.room));
     });
     setSocket(newSocket);

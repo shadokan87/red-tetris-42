@@ -17,4 +17,18 @@ model User {
   displayname String   @unique
   username    String   @unique
   password    String
+  leftPlayer  Game[]   @relation("left")
+  rightPlayer Game[]   @relation("right")
+}
+
+model Game {
+  id          Int      @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  lhsPlayerId Int
+  lhsScore    Json
+  rhsPlayerId Int
+  rhsScore    Json
+  winnerId    Int
+  lhsPlayer   User     @relation("left", fields: [lhsPlayerId], references: [id])
+  rhsPlayer   User     @relation("right", fields: [rhsPlayerId], references: [id])
 }

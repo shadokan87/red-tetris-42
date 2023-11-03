@@ -243,3 +243,94 @@
 {"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":1}","service":"red-tetris_okay"}
 {"level":"warn","message":"BR1","service":"red-tetris_okay"}
 {"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdfsfd\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":1,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"fdghdfh\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":2,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":3,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"fgggfghhgfvfgh\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"fgggfghhgfvfgh\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dsfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":3}","service":"red-tetris_okay"}

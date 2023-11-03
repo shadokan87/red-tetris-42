@@ -32,7 +32,7 @@ const fetchUserById = async (_axios, id) => {
   }
 };
 
-const useRoomMembers = (room) => {
+export const useRoomMembers = (room) => {
   const { axiosReady, axiosInstance } = useAxios();
   const [owner, setOwner] = useState(null);
   const [opponent, setOpponent] = useState(null);
@@ -106,10 +106,13 @@ function Home() {
   useEffect(() => {
     if (!room) return;
     if (room.gameStarted) {
-      router.push("/tetris", undefined, { shallow: true });
+      router.push("/tetris", undefined, {
+        shallow: true,
+        query: { redirect: window.location.hash },
+      });
     }
     console.log("new info", room);
-  }, [room]);
+  }, [room, window.location.hash]);
 
   useEffect(() => {
     if (!axiosReady) return;
