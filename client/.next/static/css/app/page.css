@@ -18,3 +18,11 @@
   padding: 4em;
 }
 
+.userLink:hover {
+  color: #1890ff;
+  cursor: pointer;
+}
+.primaryAction {
+  width: 100%;
+}
+

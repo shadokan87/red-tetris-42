@@ -225,3 +225,21 @@
 {"level":"warn","message":"ROOM {\"name\":\"dfggdf\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":false,\"id\":3,\"opponent\":2}","service":"red-tetris_okay"}
 {"level":"warn","message":"BR1","service":"red-tetris_okay"}
 {"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":1}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":1}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":1}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":1}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":1}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":\"true\",\"owner\":2,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":1}","service":"red-tetris_okay"}
+{"level":"warn","message":"BR1","service":"red-tetris_okay"}
+{"level":"warn","message":"BR2","service":"red-tetris_okay"}

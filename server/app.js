@@ -69,6 +69,7 @@ app.post(
       owner: req.user.id,
       solo: req.body.solo,
       gameStarted: false,
+      opponentReady: false,
     });
 
     return res.status(StatusCode.SuccessCreated).json({
@@ -123,14 +124,28 @@ app.post("/game/start", verifyToken, async (req, res) => {
   }
   return res.status(StatusCode.SuccessOK).json(result);
 });
-app.post("/game/room/setReady", verifyToken, async (req, res) => {
+app.post("/game/room/status/ready", verifyToken, async (req, res) => {
   const room = services.room.isInRoom(req.user.id);
   if (!room) {
-    return res
-      .status(StatusCode.ClientErrorNotFound)
-      .send("Room does not exist");
+    return res.status(StatusCode.ClientErrorNotFound).send("Room not found");
   }
-  // Your code here
+  const updatedRoom = services.room.update(room.owner, (room) => {
+    return { ...room, opponentReady: !room.opponentReady };
+  });
+  const result = {
+    message: `Opponent readiness status changed`,
+    room: updatedRoom,
+  };
+  const socketMap = socket.getSocketMap();
+  const io = socket.getIO();
+  [room.opponent, room.owner].forEach((id) => {
+    const userInfo = socketMap.get(id);
+    if (userInfo) {
+      userInfo.socket.emit("roomUpdate", result);
+      logger.info("emit to" + id, result);
+    } else logger.info("cannot emit, not connected" + id);
+  });
+  return res.status(StatusCode.SuccessOK).json(result);
 });
 
 app.post(
@@ -154,6 +169,11 @@ app.post(
         .send("Room does not exist");
     }
     const room = services.room.get(user.id);
+    if (room.name != name) {
+      return res
+        .status(StatusCode.ClientErrorNotFound)
+        .send("Room does not exist");
+    }
     const isAlreadyInRoom =
       ("opponent" in room && room.opponent == req.user.id) ||
       room.owner == req.user.id;
@@ -162,12 +182,6 @@ app.post(
         message: "Room joined successfully",
         room,
       });
-
-    if (room.name != name) {
-      return res
-        .status(StatusCode.ClientErrorNotFound)
-        .send("Room does not exist");
-    }
     if (services.room.isRoomCrowded(user.id)) {
       return res
         .status(StatusCode.ClientErrorBadRequest)

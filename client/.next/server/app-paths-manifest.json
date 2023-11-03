@@ -1,6 +1,8 @@
 {
   "/page": "app/page.js",
   "/lobby/page": "app/lobby/page.js",
+  "/tetris/page": "app/tetris/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/signin/page": "app/signin/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/404/page": "app/404/page.js"
 }
