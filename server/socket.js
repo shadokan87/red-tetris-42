@@ -143,6 +143,7 @@ module.exports = {
       const room = services.room.isInRoom(userInfo.user.id);
       const instance = tetrisInstances.get(room.id);
 
+      if (!room.gameStarted) return;
       if (!instance) {
         logger.info(`No tetris instance for room: ${room.id}, creating one.`);
         if (room.solo) {
@@ -222,6 +223,7 @@ module.exports = {
           services.room.destroy(userInfo.user.id);
           logger.info(`cleared solo instance for ${userInfo.user.username}`);
         } else {
+          endVersusGame(socket);
         }
         logger.info(`game: user ${userInfo.user} disconnected.`);
       });

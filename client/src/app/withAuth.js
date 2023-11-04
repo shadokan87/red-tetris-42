@@ -1,5 +1,5 @@
 "use client";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
@@ -8,16 +8,17 @@ import { userSelector } from "./redux/sessionReducer";
 import { setToken } from "./redux/sessionReducer";
 import { fetchAuthUser } from "./redux/sessionReducer";
 import Cookies from "js-cookie";
-
-const router = () => {};
+import { roomSelector } from "./redux/lobbyReducer";
 
 const withAuth = (Component) => {
   return (props) => {
     const dispatch = useDispatch();
     const token = useSelector(tokenSelector);
     const user = useSelector(userSelector);
+    const room = useSelector(roomSelector);
     const [isAuth, setIsAuth] = useState(user && token);
     const router = useRouter();
+    const pathname = usePathname();
 
     useEffect(() => {
       setIsAuth(user && token);
@@ -35,22 +36,19 @@ const withAuth = (Component) => {
           );
           try {
             dispatch(fetchAuthUser());
-            if (router.pathname == "/")
-              router.push("/lobby", undefined, { shallow: true });
+            switch (pathname) {
+              case "/tetris":
+                if (!room || !room.gameStarted)
+                  router.push("/lobby", undefined, { shallow: true });
+                break;
+              default:
+                break;
+            }
           } catch (e) {
-            alert("login failed");
+            console.error(e);
           }
-        } else if (router.pathname !== "/signin") {
-          router.push("/signin", undefined, { shallow: true });
-        }
+        } else router.push("/signin", undefined, { shallow: true });
       } else {
-        switch (router.pathname) {
-          // case "/signin":
-          //   router.push("/lobby", undefined, { shallow: true });
-          // break;
-          default:
-            break;
-        }
       }
     }, [isAuth, dispatch]);
 

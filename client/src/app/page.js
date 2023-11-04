@@ -129,7 +129,6 @@ function Home() {
               router.push("/404", undefined, { shallow: true });
             });
         })();
-        // joinRoom(urlFormat);
       } catch (e) {}
     } else {
       router.push("/404", undefined, { shallow: true });

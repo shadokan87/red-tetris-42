@@ -36,7 +36,12 @@ const CreateRoomModal = ({ open, onCancel, onCreate }) => {
   );
 
   return (
-    <Modal onCancel={onCancel} footer={footer} open={open}>
+    <Modal
+      title={"Create a room"}
+      onCancel={onCancel}
+      footer={footer}
+      open={open}
+    >
       <Form form={form} layout="vertical" name="form_in_modal">
         <Form.Item
           name="name"
@@ -66,7 +71,7 @@ function Lobby() {
   const dispatch = useDispatch();
   const room = useSelector(roomSelector);
   const user = useSelector(userSelector);
-  const [createRoom, setCreateRoom] = useState(false);
+  const [createRoom, setOpenCreateRoomModal] = useState(false);
   const [messageApi, contextHolder] = message.useMessage();
   const [publicRooms, setPublicRooms] = useState([]);
   const roomTable = useMemo(() => {
@@ -93,7 +98,7 @@ function Lobby() {
   }, [axiosReady, axiosInstance]);
 
   const handleCancel = () => {
-    setCreateRoom((prev) => !prev);
+    setOpenCreateRoomModal((prev) => !prev);
   };
 
   const handleCreateRoom = async (values) => {
@@ -101,13 +106,20 @@ function Lobby() {
       console.log("axios state", axiosInstance);
       const response = await axiosInstance.post("/game/room/create", values);
       dispatch(setRoom(response.data.room));
+      router.push(
+        `/#${response.data.room.name}[${user.displayname}]`,
+        undefined,
+        {
+          shallow: true,
+        }
+      );
       // console.log("response", response.data);
       messageApi.success("Room created successfully");
     } catch (error) {
       console.error(error);
       messageApi.error("Failed to create room");
     }
-    setCreateRoom((prev) => !prev);
+    setOpenCreateRoomModal((prev) => !prev);
   };
 
   const joinRoom = async (room) => {
@@ -143,29 +155,6 @@ function Lobby() {
 
   if (!user || !axiosReady) return <></>;
 
-  const Actions = () => {
-    const canStartAction = (
-      <Button type={"primary"} onClick={() => handleStartGame()}>
-        {"Start game"}
-      </Button>
-    );
-    const shouldWaitAction = (
-      <Button
-        type={"dashed"}
-        disabled={true}
-        onClick={() => setCreateRoom(true)}
-      >
-        {"Waiting for opponent"}
-      </Button>
-    );
-    if (!room) return <Typography>{"No room"}</Typography>;
-    else if (!room.solo) {
-      const opponentIsPresent = "opponent" in room;
-      if (!opponentIsPresent) return shouldWaitAction;
-    }
-    return canStartAction;
-  };
-
   const columns = [
     {
       title: "Room Name",
@@ -182,14 +171,17 @@ function Lobby() {
   return (
     <main>
       {contextHolder}
-      <h1>{user.username}</h1>
-      {(room && JSON.stringify(room)) || <h1>{"no room"}</h1>}
       <CreateRoomModal
         open={createRoom}
         onCancel={handleCancel}
         onCreate={handleCreateRoom}
       />
-      <Button type={"primary"} onClick={() => setCreateRoom(true)}>
+      <Flex justify={"center"} align="center">
+        <Typography>
+          <h1>{"Lobby"}</h1>
+        </Typography>
+      </Flex>
+      <Button type={"primary"} onClick={() => setOpenCreateRoomModal(true)}>
         {"Create room"}
       </Button>
       <Table
@@ -203,7 +195,6 @@ function Lobby() {
         columns={columns}
         dataSource={roomTable}
       />
-      <Actions />
     </main>
   );
 }

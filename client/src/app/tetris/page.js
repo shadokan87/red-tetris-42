@@ -33,7 +33,7 @@ const useTetrisClient = (gameGrid) => {
   });
 
   useEffect(() => {
-    if (!owner) return;
+    if (!owner || !token) return;
     if (socket) {
       socket.disconnect();
     }
@@ -95,6 +95,7 @@ const Tetris = () => {
   const router = useRouter();
   useControls(socket);
 
+  if (!socket) return <></>;
   return (
     <>
       <Flex justify={"center"} align="center" className="main" gap={"0.5em"}>
