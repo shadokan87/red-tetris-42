@@ -1,4 +1,4 @@
-const { Tetris, TetrominoDispenser } = require("./tetris");
+const { Tetris, TetrominoDispenser, getCurrentId } = require("./tetris");
 
 let io = undefined;
 let gameNamespace = undefined;
@@ -34,7 +34,12 @@ const getPlayerData = (socket) => {
   console.log(`DEBUG ROOM ${JSON.stringify(room)}`);
   const instance = tetrisInstances.get(room.id);
   const lobbySocket = socketInfo.get(userInfo.user.id);
-  return { userInfo, room, instance, lobbySocket };
+  return {
+    userInfo,
+    room,
+    instance,
+    lobbySocket: (lobbySocket && lobbySocket.socket) || undefined,
+  };
 };
 
 const endVersusGame = (socket) => {
@@ -147,6 +152,11 @@ module.exports = {
         socket.disconnect();
       };
 
+      setTimeout(() => {
+        gameOverCallback();
+        console.log(`DEBUG END, id is ${getCurrentId()}`);
+      }, 5000);
+
       const drawingDataCallback = (drawingData) => {
         socket.volatile.emit("data", drawingData);
       };
@@ -164,26 +174,26 @@ module.exports = {
         soloInstance.appendSequence(sequence)
       );
       soloInstance.setTetrominoDispenser(dispenser);
-      socket.on("RegisterKeyStroke", (k) => {
-        console.log(`KEY: ${k}`);
-        if (!room) {
-          console.log("DEBUG: room is not defined");
-          return;
-        }
-        if (!tetrisInstances.has(room.id)) {
-          console.log("DEBUG: tetrisInstances does not have room.id");
-          return;
-        }
-        if (!soloInstance) {
-          console.log("DEBUG: soloInstance is not defined");
-          return;
-        }
-        if (!room.gameStarted) {
-          console.log("DEBUG: game has not started");
-          return;
-        }
-        soloInstance.RegisterKeyStroke(k);
-      });
+      // socket.on("RegisterKeyStroke", (k) => {
+      //   console.log(`KEY: ${k}`);
+      //   if (!room) {
+      //     console.log("DEBUG: room is not defined");
+      //     return;
+      //   }
+      //   if (!tetrisInstances.has(room.id)) {
+      //     console.log("DEBUG: tetrisInstances does not have room.id");
+      //     return;
+      //   }
+      //   if (!soloInstance) {
+      //     console.log("DEBUG: soloInstance is not defined");
+      //     return;
+      //   }
+      //   if (!room.gameStarted) {
+      //     console.log("DEBUG: game has not started");
+      //     return;
+      //   }
+      //   soloInstance.RegisterKeyStroke(k);
+      // });
       return soloInstance;
     };
     // Handle new connections and disconnections in the game namespace
@@ -191,60 +201,65 @@ module.exports = {
       const { userInfo, room, instance, lobbySocket } = getPlayerData(socket);
 
       if (!room.gameStarted) return;
-      if (!instance) {
-        logger.info(`No tetris instance for room: ${room.id}, creating one.`);
-        if (room.solo) {
-          const soloInstance = createSoloInstance(room, userInfo, socket);
-          tetrisInstances.set(room.id, { owner: soloInstance.startGame() });
-          const updatedRoom = services.room.update(room.owner, (room) => {
-            return { ...room, gameStarted: true, opponentReady: false };
-          });
-          lobbySocket.emit("roomUpdate", updatedRoom);
-          // socket.emit;
-        } else {
-          const firstInstance = new Tetris(
-            () => {
-              logger.info(`Tetris: gameOver for ${userInfo.user.username}`);
-              endVersusGame(socket);
-            },
-            (drawingData) => {
-              socket.volatile.emit("data", drawingData);
-            },
-            (score) => socket.emit("score", score)
-          );
-          if (userInfo.user.id == room.owner)
-            tetrisInstances.set(room.id, { owner: firstInstance });
-          else tetrisInstances.set(room.id, { opponent: firstInstance });
-        }
-      } else {
-        const firstInstance = instance.owner
-          ? instance.owner
-          : instance.opponent;
-        const secondInstance = new Tetris(
-          () => {
-            logger.info(`Tetris: gameOver for ${userInfo.user.username}`);
-            endVersusGame(socket);
-          },
-          (drawingData) => {
-            socket.volatile.emit("data", drawingData);
-          },
-          (score) => socket.emit("score", score)
-        );
-        if (instance.owner)
-          tetrisInstances.set(room.id, {
-            ...instance,
-            opponent: secondInstance,
-          });
-        else
-          tetrisInstances.set(room.id, { ...instance, owner: secondInstance });
-        const allInstances = [firstInstance, secondInstance];
-        const dispenser = new TetrominoDispenser((sequence) =>
-          allInstances.map((instance) => instance.appendSequence(sequence))
-        );
-        allInstances.map((instance) => {
-          instance.setTetrominoDispenser(dispenser).startGame();
+      if (room.solo) {
+        const soloInstance = createSoloInstance(room, userInfo, socket);
+        const id = soloInstance.getId();
+        logger.info(`CREATED ${id} ${userInfo.displayname}`);
+        tetrisInstances.set(room.id, { owner: soloInstance.startGame() });
+        const updatedRoom = services.room.update(room.owner, (room) => {
+          return { ...room, gameStarted: true, opponentReady: false };
         });
+        if (lobbySocket) lobbySocket.emit("roomUpdate", updatedRoom);
+      } else {
       }
+      // if (!instance) {
+      //   logger.info(`No tetris instance for room: ${room.id}, creating one.`);
+      //   if (room.solo) {
+      //     // socket.emit;
+      //   } else {
+      //     // const firstInstance = new Tetris(
+      //     //   () => {
+      //     //     logger.info(`Tetris: gameOver for ${userInfo.user.username}`);
+      //     //     endVersusGame(socket);
+      //     //   },
+      //     //   (drawingData) => {
+      //     //     socket.volatile.emit("data", drawingData);
+      //     //   },
+      //     //   (score) => socket.emit("score", score)
+      //     // );
+      //     // if (userInfo.user.id == room.owner)
+      //     //   tetrisInstances.set(room.id, { owner: firstInstance });
+      //     // else tetrisInstances.set(room.id, { opponent: firstInstance });
+      //   }
+      // } else {
+      //   // const firstInstance = instance.owner
+      //   //   ? instance.owner
+      //   //   : instance.opponent;
+      //   // const secondInstance = new Tetris(
+      //   //   () => {
+      //   //     logger.info(`Tetris: gameOver for ${userInfo.user.username}`);
+      //   //     endVersusGame(socket);
+      //   //   },
+      //   //   (drawingData) => {
+      //   //     socket.volatile.emit("data", drawingData);
+      //   //   },
+      //   //   (score) => socket.emit("score", score)
+      //   // );
+      //   // if (instance.owner)
+      //   //   tetrisInstances.set(room.id, {
+      //   //     ...instance,
+      //   //     opponent: secondInstance,
+      //   //   });
+      //   // else
+      //   //   tetrisInstances.set(room.id, { ...instance, owner: secondInstance });
+      //   // const allInstances = [firstInstance, secondInstance];
+      //   // const dispenser = new TetrominoDispenser((sequence) =>
+      //   //   allInstances.map((instance) => instance.appendSequence(sequence))
+      //   // );
+      //   // allInstances.map((instance) => {
+      //   //   instance.setTetrominoDispenser(dispenser).startGame();
+      //   // });
+      // }
 
       logger.info(
         `game: user ${userInfo.user.username} connected, room: ${JSON.stringify(
@@ -266,16 +281,23 @@ module.exports = {
         }
         logger.info(`game: user ${userInfo.user} disconnected.`);
       });
-      // socket.on("RegisterKeyStroke", (k) => {
-      //   const socketGame = getSocketGame(socket);
-      //   if (!socketGame) return;
-      //   const instanceIndex =
-      //     socketGame.userInfo.user.id == socketGame.room.owner
-      //       ? "owner"
-      //       : "opponent";
-      //   const instance = socketGame.instance[instanceIndex];
-      //   instance && instance.RegisterKeyStroke(k);
-      // });
+      socket.on("RegisterKeyStroke", (k) => {
+        const { room, instance } = getPlayerData(socket);
+        if (!room || !instance || !room.gameStarted) return;
+        if (room.solo) {
+          console.log("[KEY]", k);
+          instance.owner.RegisterKeyStroke(k);
+        } else {
+        }
+        // const socketGame = getSocketGame(socket);
+        // if (!socketGame) return;
+        // const instanceIndex =
+        //   socketGame.userInfo.user.id == socketGame.room.owner
+        //     ? "owner"
+        //     : "opponent";
+        // const instance = socketGame.instance[instanceIndex];
+        // instance && instance.RegisterKeyStroke(k);
+      });
     });
 
     return io;

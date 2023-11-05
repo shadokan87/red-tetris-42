@@ -73,6 +73,8 @@ export class TetrominoDispenser {
 }
 
 const fps = 30;
+let id = 0;
+export const getCurrentId = () => id;
 /**
  * Class representing a Tetris game.
  * @param {function} onGameOver - The function to call when the game is over.
@@ -128,6 +130,7 @@ export class Tetris {
   totalLineClear = 0;
   count = 0;
   tetrominoDispenser;
+  id;
 
   /**
    * Create a Tetris game.
@@ -138,7 +141,12 @@ export class Tetris {
     this.onGameOver = onGameOver;
     this.onDrawing = onDrawing;
     this.onScoreUpdate = onScoreUpdate;
+    this.id = id++;
     return this;
+  }
+
+  getId() {
+    return this.id;
   }
 
   setTetrominoDispenser(dispenser) {
