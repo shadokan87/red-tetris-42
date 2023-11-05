@@ -81,14 +81,20 @@ const RenderRoomMembers = ({ room, owner, opponent, ownerActions }) => {
     <>
       <Flex vertical className="membersWrapper">
         <OneMember room={room} member={owner} />
-        <Divider>{"VS"}</Divider>
-        {(opponent && (
-          <OneMember
-            room={room}
-            member={opponent}
-            ownerActions={(isOwner && ownerActions()) || undefined}
-          />
-        )) || <Typography>{"Waiting for opponent"}</Typography>}
+        {!room.solo && (
+          <>
+            <Divider>{"VS"}</Divider>
+            {opponent ? (
+              <OneMember
+                room={room}
+                member={opponent}
+                ownerActions={isOwner ? ownerActions() : undefined}
+              />
+            ) : (
+              <Typography>{"Waiting for opponent"}</Typography>
+            )}
+          </>
+        )}
       </Flex>
     </>
   );
@@ -106,6 +112,7 @@ function Home() {
   useEffect(() => {
     if (!room) return;
     if (room.gameStarted) {
+      alert("pushing to tetris");
       router.push("/tetris", undefined, {
         shallow: true,
         query: { redirect: window.location.hash },
@@ -173,13 +180,13 @@ function Home() {
         <Popover
           content="Opponent not ready"
           trigger="hover"
-          open={!room.opponentReady && showPopover}
+          open={!room.solo && !room.opponentReady && showPopover}
         >
           <Button
-            type={room.opponentReady ? "primary" : "default"}
+            type={room.solo || room.opponentReady ? "primary" : "default"}
             className={"primaryAction"}
             onClick={async () =>
-              room.opponentReady && (await handleStartGame())
+              room.opponentReady || (room.solo && (await handleStartGame()))
             }
             onMouseEnter={() => setShowPopover(true)}
             onMouseLeave={() => setShowPopover(false)}

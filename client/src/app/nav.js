@@ -16,12 +16,15 @@ export const NavItem = ({ label, pathname, disabled }) => {
   );
 };
 
-export default function Navbar({ navItems }) {
+export default function Navbar({ navItems, rhs }) {
   return (
-    <Flex align="middle" classlabel="navbar">
-      {navItems.map((itemProps, index) => (
-        <NavItem key={index} {...itemProps} />
-      ))}
+    <Flex justify="space-between">
+      <Flex align="middle" classlabel="navbar">
+        {navItems.map((itemProps, index) => (
+          <NavItem key={index} {...itemProps} />
+        ))}
+      </Flex>
+      {rhs && rhs()}
     </Flex>
   );
 }

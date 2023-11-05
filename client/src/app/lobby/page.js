@@ -14,32 +14,21 @@ import { useRouter } from "next/navigation";
 const CreateRoomModal = ({ open, onCancel, onCreate }) => {
   const [form] = Form.useForm();
 
-  const footer = () => (
-    <Flex justify="center" align="middle">
-      <Button
-        type="primary"
-        onClick={() => {
-          form
-            .validateFields()
-            .then((values) => {
-              form.resetFields();
-              onCreate(values);
-            })
-            .catch((info) => {
-              console.log("Validate Failed:", info);
-            });
-        }}
-      >
-        Create
-      </Button>
-    </Flex>
-  );
-
   return (
     <Modal
       title={"Create a room"}
       onCancel={onCancel}
-      footer={footer}
+      onOk={() => {
+        form
+          .validateFields()
+          .then((values) => {
+            form.resetFields();
+            onCreate(values);
+          })
+          .catch((info) => {
+            console.log("Validate Failed:", info);
+          });
+      }}
       open={open}
     >
       <Form form={form} layout="vertical" name="form_in_modal">
@@ -57,7 +46,7 @@ const CreateRoomModal = ({ open, onCancel, onCreate }) => {
         <Form.Item name="isPublic" valuePropName="checked" initialValue={true}>
           <Checkbox>Public Room</Checkbox>
         </Form.Item>
-        <Form.Item name="solo" valuePropName="checked" initialValue={true}>
+        <Form.Item name="solo" valuePropName="checked" initialValue={false}>
           <Checkbox>Solo game</Checkbox>
         </Form.Item>
       </Form>

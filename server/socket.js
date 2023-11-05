@@ -30,13 +30,12 @@ const getSocketGame = (socket) => {
 
 const endVersusGame = (socket) => {
   const socketGame = getSocketGame(socket);
-  logger.warn("BR1");
   if (!socketGame) return;
-  logger.warn("BR2");
   const allInstances = [
     socketGame.instance.owner,
     socketGame.instance.opponent,
   ];
+  logger.info(`INSTANCES ${JSON.stringify(allInstances)}`);
   let scores = allInstances.map((s) => s.getScore());
   scores[0].points = 100;
   const noWinner = scores[0].points == 0 && scores[1].points == 0;
@@ -73,20 +72,20 @@ const endVersusGame = (socket) => {
   const opponentSocket = gameNamespaceInfo.get(opponentUserId);
   const allSocket = [socket, opponentSocket.socket];
   allInstances.forEach((i) => i.stopGame());
-  allSocket.forEach((s) => {
-    s && s.emit("gameOver");
-  });
   const updatedRoom = services.room.update(socketGame.room.owner, (room) => {
     return { ...room, gameStarted: false, opponentReady: false };
   });
-  allLobbySocket.forEach(
-    (s) =>
-      s &&
-      s.emit("roomUpdate", {
-        message: "game ended",
-        room: updatedRoom,
-      })
-  );
+  allSocket.forEach((s) => {
+    s && s.emit("gameOver", updatedRoom);
+  });
+  // allLobbySocket.forEach(
+  //   (s) =>
+  //     s &&
+  //     s.emit("roomUpdate", {
+  //       message: "game ended",
+  //       room: updatedRoom,
+  //     })
+  // );
   tetrisInstances.delete(socketGame.room.id);
 };
 
@@ -105,7 +104,6 @@ module.exports = {
     io.use(async (socket, next) => {
       const token = socket.handshake.query.token;
       const user = await services.auth.verify(token);
-      logger.info(`!SET_USER ${user.id}`);
       if (user) {
         socketInfo.set(user.id, {
           user,
@@ -137,31 +135,53 @@ module.exports = {
         next(new Error("Authentication error"));
       }
     });
-    // Handle new connections and disconnections in the game namespace
-    gameNamespace.on("connection", (socket) => {
+
+    const getPlayerData = (socket) => {
       const userInfo = getUserBySocketId(gameNamespaceInfo, socket.id);
       const room = services.room.isInRoom(userInfo.user.id);
+      console.log(`DEBUG ROOM ${JSON.stringify(room)}`);
       const instance = tetrisInstances.get(room.id);
+      return { userInfo, room, instance };
+    };
+
+    const createSoloInstance = (room, userInfo, socket) => {
+      const gameOverCallback = () => {
+        tetrisInstances.delete(room.id);
+        const updatedRoom = services.room.update(room.owner, (room) => {
+          return { ...room, gameStarted: false, opponentReady: false };
+        });
+        socket.emit("gameOver", updatedRoom);
+        socket.disconnect();
+      };
+
+      const drawingDataCallback = (drawingData) => {
+        socket.volatile.emit("data", drawingData);
+      };
+
+      const scoreCallback = (score) => {
+        socket.emit("score", score);
+      };
+
+      const soloInstance = new Tetris(
+        gameOverCallback,
+        drawingDataCallback,
+        scoreCallback
+      );
+      const dispenser = new TetrominoDispenser((sequence) =>
+        soloInstance.appendSequence(sequence)
+      );
+      soloInstance.setTetrominoDispenser(dispenser);
+      tetrisInstances.set(room.id, { owner: soloInstance.startGame() });
+    };
+    // Handle new connections and disconnections in the game namespace
+    gameNamespace.on("connection", (socket) => {
+      const { userInfo, room, instance } = getPlayerData(socket);
 
       if (!room.gameStarted) return;
       if (!instance) {
         logger.info(`No tetris instance for room: ${room.id}, creating one.`);
         if (room.solo) {
-          const soloInstance = new Tetris(
-            () => {
-              logger.info(`Tetris: gameOver for ${userInfo.user.username}`);
-              tetrisInstances.delete(room.id);
-            },
-            (drawingData) => {
-              socket.volatile.emit("data", drawingData);
-            },
-            (score) => socket.emit("score", score)
-          );
-          const dispenser = new TetrominoDispenser((sequence) =>
-            soloInstance.appendSequence(sequence)
-          );
-          soloInstance.setTetrominoDispenser(dispenser);
-          tetrisInstances.set(room.id, { owner: soloInstance.startGame() });
+          createSoloInstance(room, userInfo, socket);
         } else {
           const firstInstance = new Tetris(
             () => {

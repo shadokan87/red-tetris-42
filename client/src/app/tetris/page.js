@@ -10,18 +10,19 @@ import {
 } from "./RenderTetris";
 import { Mutex } from "../utils";
 import { tokenSelector } from "../redux/sessionReducer";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { io } from "socket.io-client";
 import withAuth from "../withAuth";
 import { Flex } from "antd";
 import { GameInfo } from "./RenderTetris";
 import { useRouter } from "next/navigation";
-import { roomSelector } from "../redux/lobbyReducer";
+import { roomSelector, setRoom } from "../redux/lobbyReducer";
 import { useRoomMembers } from "../page";
 
 const keyStokes = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
 
 const useTetrisClient = (gameGrid) => {
+  const dispatch = useDispatch();
   const router = useRouter();
   const room = useSelector(roomSelector);
   const [owner, opponent] = useRoomMembers(room);
@@ -53,7 +54,8 @@ const useTetrisClient = (gameGrid) => {
         }
       })
       .on("score", (newScore) => setScore(newScore))
-      .on("gameOver", () => {
+      .on("gameOver", (newRoomData) => {
+        dispatch(setRoom(newRoomData));
         router.push(`/#${room.name}[${owner.displayname}]`, undefined, {
           shallow: true,
         });
