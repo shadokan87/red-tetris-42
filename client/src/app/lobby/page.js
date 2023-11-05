@@ -134,7 +134,6 @@ function Lobby() {
   const handleStartGame = async () => {
     try {
       const response = await axiosInstance.post("/game/start");
-      dispatch(setRoom(response.data.room));
       messageApi.success("Game started successfully");
     } catch (error) {
       console.error(error);

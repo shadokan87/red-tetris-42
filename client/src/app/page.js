@@ -112,7 +112,6 @@ function Home() {
   useEffect(() => {
     if (!room) return;
     if (room.gameStarted) {
-      alert("pushing to tetris");
       router.push("/tetris", undefined, {
         shallow: true,
         query: { redirect: window.location.hash },

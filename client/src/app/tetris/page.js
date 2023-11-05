@@ -44,6 +44,7 @@ const useTetrisClient = (gameGrid) => {
       reconnectionAttempts: 5,
     })
       .on("data", (data) => {
+        console.log("data", data);
         clearGrid(gameGrid);
         let pieces = [];
         for (let i = 0; i < data.length; i++) {
@@ -77,6 +78,7 @@ const useControls = (socket) => {
       if (socket) {
         if (keyStokes.includes(e.key)) {
           mutex.trigger(() => {
+            console.log("emit key ", e.key);
             socket.emit("RegisterKeyStroke", e.key);
           });
         }
