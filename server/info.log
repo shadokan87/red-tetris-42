@@ -5384,3 +5384,153 @@
 {"level":"warn","message":"ROOM {\"name\":\"dfgdfg\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
 {"level":"info","message":"CREATED 3 undefined","service":"red-tetris_okay"}
 {"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"dfgdfg\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"hjgbhjfv\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 0 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"hjgbhjfv\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 1 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"hjgbhjfv\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"hjgbhjfv\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 2 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"hjgbhjfv\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 0 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 1 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 2 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 3 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 4 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 5 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 6 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 7 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 8 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 9 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 10 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 11 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 12 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 13 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 14 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 15 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 16 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 17 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 18 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 19 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 20 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 21 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 22 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 23 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 24 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 25 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 26 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 27 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 28 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 29 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 30 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"game: user [object Object] disconnected.","service":"red-tetris_okay"}
+{"level":"info","message":"CREATED 31 undefined","service":"red-tetris_okay"}
+{"level":"info","message":"game: user shadokan87 connected, room: {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":true,\"opponentReady\":false,\"id\":0}.","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":1}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":1}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":1}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":1}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":1}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":1}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":1}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":1}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":1}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":1}","service":"red-tetris_okay"}

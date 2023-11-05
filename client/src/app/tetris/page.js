@@ -57,7 +57,7 @@ const useTetrisClient = (gameGrid) => {
       .on("score", (newScore) => setScore(newScore))
       .on("gameOver", (newRoomData) => {
         dispatch(setRoom(newRoomData));
-        router.push(`/#${room.name}[${owner.displayname}]`, undefined, {
+        router.push(`/#${newRoomData.name}[${owner.displayname}]`, undefined, {
           shallow: true,
         });
       });

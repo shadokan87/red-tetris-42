@@ -161,6 +161,7 @@ export class Tetris {
   ExecuteKeyStroke() {
     if (!this.keyStroke.length) return;
     const key = this.keyStroke.pop();
+    console.log(`KEY ${key}`);
     switch (key) {
       case "ArrowLeft":
       case "ArrowRight":
