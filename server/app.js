@@ -95,16 +95,8 @@ app.post("/game/start", verifyToken, async (req, res) => {
       return { ...room, gameStarted: true };
     });
     result["room"] = updatedRoom;
-    const socketMap = socket.getSocketMap();
-    const io = socket.getIO();
-    // [req.user.id].forEach((id) => {
-    //   const userInfo = socketMap.get(id);
-    //   if (userInfo) {
-    //     userInfo.socket.emit("roomUpdate", result);
-    //     logger.info("emit to" + id, result);
-    //   } else logger.info("cannot emit, not connected" + id);
-    // });
   } else {
+    console.log("BR1");
     if (!("opponent" in room)) {
       return res
         .status(StatusCode.ClientErrorBadRequest)

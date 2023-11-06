@@ -125,7 +125,7 @@ export class Tetris {
   playfield;
   tetrominoSequence = [];
   tetromino;
-  intervalIds = -1;
+  intervalIds = [-1, -1];
   score = 0;
   totalLineClear = 0;
   count = 0;
@@ -190,6 +190,10 @@ export class Tetris {
         break;
     }
     // console.log("execute key: " + key);
+  }
+
+  gameStarted() {
+    return this.intervalIds[0] != -1;
   }
 
   startGame() {

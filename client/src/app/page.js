@@ -184,9 +184,9 @@ function Home() {
           <Button
             type={room.solo || room.opponentReady ? "primary" : "default"}
             className={"primaryAction"}
-            onClick={async () =>
-              room.opponentReady || (room.solo && (await handleStartGame()))
-            }
+            onClick={async () => {
+              if (room.opponentReady || room.solo) await handleStartGame();
+            }}
             onMouseEnter={() => setShowPopover(true)}
             onMouseLeave={() => setShowPopover(false)}
           >

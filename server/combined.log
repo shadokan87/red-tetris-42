@@ -5536,3 +5536,137 @@
 {"level":"warn","message":"ROOM {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":1}","service":"red-tetris_okay"}
 {"level":"warn","message":"ROOM {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":1}","service":"red-tetris_okay"}
 {"level":"warn","message":"ROOM {\"name\":\"dfgdfgdfg\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":1}","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdffsd\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"id\":0}","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"dfd","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"dfd","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"dfd","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"dfd","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"ddd","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"ddd","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"ddd","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"ddd","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"ddd","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"ddd","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"ddd","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"ddd","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"ddd","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"ddd","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"ddd","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"ddd","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"ddd","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"ddd","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"ddd","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"ddd","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"cannot emit, not connected2","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"sdf","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"sdf","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"cannot emit, not connected2","service":"red-tetris_okay"}
+{"level":"info","message":"SocketMap keys: 1","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"sdf","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"sdf","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"sdf","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"sdf","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"sdf","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"sdf","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"sdf","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"sdf","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdf\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":1}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"sdf","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"sdf","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"INSTANCES [{\"tetrominos\":{\"I\":[[0,0,0,0],[1,1,1,1],[0,0,0,0],[0,0,0,0]],\"J\":[[1,0,0],[1,1,1],[0,0,0]],\"L\":[[0,0,1],[1,1,1],[0,0,0]],\"O\":[[1,1],[1,1]],\"S\":[[0,1,1],[1,1,0],[0,0,0]],\"Z\":[[1,1,0],[0,1,1],[0,0,0]],\"T\":[[0,1,0],[1,1,1],[0,0,0]]},\"keyStroke\":[],\"playfield\":[[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]],\"tetrominoSequence\":[\"Z\",\"T\",\"I\",\"S\",\"O\",\"L\"],\"tetromino\":{\"name\":\"J\",\"matrix\":[[1,0,0],[1,1,1],[0,0,0]],\"row\":6,\"col\":3},\"intervalIds\":[{},{}],\"score\":0,\"totalLineClear\":0,\"count\":15,\"tetrominoDispenser\":{},\"id\":0},{\"tetrominos\":{\"I\":[[0,0,0,0],[1,1,1,1],[0,0,0,0],[0,0,0,0]],\"J\":[[1,0,0],[1,1,1],[0,0,0]],\"L\":[[0,0,1],[1,1,1],[0,0,0]],\"O\":[[1,1],[1,1]],\"S\":[[0,1,1],[1,1,0],[0,0,0]],\"Z\":[[1,1,0],[0,1,1],[0,0,0]],\"T\":[[0,1,0],[1,1,1],[0,0,0]]},\"keyStroke\":[],\"playfield\":[[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]],\"tetrominoSequence\":[\"Z\",\"T\",\"I\",\"S\",\"O\",\"L\"],\"tetromino\":{\"name\":\"J\",\"matrix\":[[1,0,0],[1,1,1],[0,0,0]],\"row\":6,\"col\":3},\"intervalIds\":[{},{}],\"score\":0,\"totalLineClear\":0,\"count\":15,\"tetrominoDispenser\":{},\"id\":1}]","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"sdf","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"sdf","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdf\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":1}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"sdf","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"sdf","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"INSTANCES [{\"tetrominos\":{\"I\":[[0,0,0,0],[1,1,1,1],[0,0,0,0],[0,0,0,0]],\"J\":[[1,0,0],[1,1,1],[0,0,0]],\"L\":[[0,0,1],[1,1,1],[0,0,0]],\"O\":[[1,1],[1,1]],\"S\":[[0,1,1],[1,1,0],[0,0,0]],\"Z\":[[1,1,0],[0,1,1],[0,0,0]],\"T\":[[0,1,0],[1,1,1],[0,0,0]]},\"keyStroke\":[],\"playfield\":[[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]],\"tetrominoSequence\":[\"L\",\"J\",\"T\",\"O\",\"S\",\"S\",\"L\",\"T\",\"O\",\"J\",\"Z\",\"I\"],\"tetromino\":{\"name\":\"I\",\"matrix\":[[0,0,0,0],[1,1,1,1],[0,0,0,0],[0,0,0,0]],\"row\":15,\"col\":3},\"intervalIds\":[{},{}],\"score\":0,\"totalLineClear\":0,\"count\":31,\"tetrominoDispenser\":{},\"id\":2},{\"tetrominos\":{\"I\":[[0,0,0,0],[1,1,1,1],[0,0,0,0],[0,0,0,0]],\"J\":[[1,0,0],[1,1,1],[0,0,0]],\"L\":[[0,0,1],[1,1,1],[0,0,0]],\"O\":[[1,1],[1,1]],\"S\":[[0,1,1],[1,1,0],[0,0,0]],\"Z\":[[1,1,0],[0,1,1],[0,0,0]],\"T\":[[0,1,0],[1,1,1],[0,0,0]]},\"keyStroke\":[],\"playfield\":[[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]],\"tetrominoSequence\":[\"S\",\"L\",\"T\",\"O\",\"J\",\"Z\"],\"tetromino\":{\"name\":\"I\",\"matrix\":[[0,0,0,0],[1,1,1,1],[0,0,0,0],[0,0,0,0]],\"row\":7,\"col\":3},\"intervalIds\":[{},{}],\"score\":0,\"totalLineClear\":0,\"count\":15,\"tetrominoDispenser\":{},\"id\":4}]","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shinobi has joined the room","room":{"gameStarted":false,"id":1,"isPublic":true,"name":"sdfsdf","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 shinobi has joined the room","room":{"gameStarted":false,"id":1,"isPublic":true,"name":"sdfsdf","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":1,"isPublic":true,"name":"sdfsdf","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":1,"isPublic":true,"name":"sdfsdf","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"sdfsdf\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":1,\"opponent\":1}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"sdfsdf","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":1,"isPublic":true,"name":"sdfsdf","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"dfgdfg","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"dfgdfg","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"dfgdfg","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"dfgdfg","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dfgdfg\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":1}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"dfgdfg","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"dfgdfg","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"server is running on http://localhost:3000","service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"hjkhjk","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 shinobi has joined the room","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"hjkhjk","opponent":1,"opponentReady":false,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"hjkhjk","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 Opponent readiness status changed","room":{"gameStarted":false,"id":0,"isPublic":true,"name":"hjkhjk","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"hjkhjk\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"id\":0,\"opponent\":1}","service":"red-tetris_okay"}
+{"level":"info","message":"emit to1 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"hjkhjk","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"emit to2 game started","room":{"gameStarted":true,"id":0,"isPublic":true,"name":"hjkhjk","opponent":1,"opponentReady":true,"owner":2,"solo":false},"service":"red-tetris_okay"}
+{"level":"info","message":"INSTANCES [{\"tetrominos\":{\"I\":[[0,0,0,0],[1,1,1,1],[0,0,0,0],[0,0,0,0]],\"J\":[[1,0,0],[1,1,1],[0,0,0]],\"L\":[[0,0,1],[1,1,1],[0,0,0]],\"O\":[[1,1],[1,1]],\"S\":[[0,1,1],[1,1,0],[0,0,0]],\"Z\":[[1,1,0],[0,1,1],[0,0,0]],\"T\":[[0,1,0],[1,1,1],[0,0,0]]},\"keyStroke\":[],\"playfield\":[[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]],\"tetrominoSequence\":[\"T\",\"I\",\"Z\",\"L\",\"O\",\"S\"],\"tetromino\":{\"name\":\"J\",\"matrix\":[[1,0,0],[1,1,1],[0,0,0]],\"row\":6,\"col\":3},\"intervalIds\":[{},{}],\"score\":0,\"totalLineClear\":0,\"count\":15,\"tetrominoDispenser\":{},\"id\":1},{\"tetrominos\":{\"I\":[[0,0,0,0],[1,1,1,1],[0,0,0,0],[0,0,0,0]],\"J\":[[1,0,0],[1,1,1],[0,0,0]],\"L\":[[0,0,1],[1,1,1],[0,0,0]],\"O\":[[1,1],[1,1]],\"S\":[[0,1,1],[1,1,0],[0,0,0]],\"Z\":[[1,1,0],[0,1,1],[0,0,0]],\"T\":[[0,1,0],[1,1,1],[0,0,0]]},\"keyStroke\":[],\"playfield\":[[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]],\"tetrominoSequence\":[\"T\",\"I\",\"Z\",\"L\",\"O\",\"S\"],\"tetromino\":{\"name\":\"J\",\"matrix\":[[1,0,0],[1,1,1],[0,0,0]],\"row\":6,\"col\":3},\"intervalIds\":[{},{}],\"score\":0,\"totalLineClear\":0,\"count\":15,\"tetrominoDispenser\":{},\"id\":0}]","service":"red-tetris_okay"}
