@@ -195,6 +195,11 @@ module.exports = {
         drawingDataCallback,
         scoreCallback
       );
+
+      socket.on(
+        "RegisterKeyStroke",
+        (k) => versusInstance.gameStarted && versusInstance.RegisterKeyStroke(k)
+      );
       return versusInstance;
     };
     // Handle new connections and disconnections in the game namespace
