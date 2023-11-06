@@ -41,7 +41,9 @@ const useTetrisClient = (gameGrid) => {
 
     const newSocket = io("http://localhost:3000/game", {
       query: { token },
-      reconnectionAttempts: 5,
+      reconnectionAttempts: 10,
+      reconnection: true,
+      reconnectionDelay: 2000,
     })
       .on("data", (data) => {
         console.log("data", data);
