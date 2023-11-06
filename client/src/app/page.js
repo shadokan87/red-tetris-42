@@ -174,25 +174,44 @@ function Home() {
         messageApi.error("Failed to start game");
       }
     };
+    const handleDestroyRoom = async () => {
+      try {
+        await axiosInstance.delete(`/game/room/delete`);
+        router.push("/lobby");
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
     if (isOwner)
       return (
-        <Popover
-          content="Opponent not ready"
-          trigger="hover"
-          open={!room.solo && !room.opponentReady && showPopover}
-        >
-          <Button
-            type={room.solo || room.opponentReady ? "primary" : "default"}
-            className={"primaryAction"}
-            onClick={async () => {
-              if (room.opponentReady || room.solo) await handleStartGame();
-            }}
-            onMouseEnter={() => setShowPopover(true)}
-            onMouseLeave={() => setShowPopover(false)}
+        <div>
+          <Popover
+            content="Opponent not ready"
+            trigger="hover"
+            open={!room.solo && !room.opponentReady && showPopover}
           >
-            {"Start game"}
+            <Button
+              type={room.solo || room.opponentReady ? "primary" : "default"}
+              className={"primaryAction"}
+              onClick={async () => {
+                if (room.opponentReady || room.solo) await handleStartGame();
+              }}
+              onMouseEnter={() => setShowPopover(true)}
+              onMouseLeave={() => setShowPopover(false)}
+            >
+              {"Start game"}
+            </Button>
+          </Popover>
+          <Button
+            type={"primary"}
+            className={"primaryAction"}
+            danger
+            onClick={async () => await handleDestroyRoom()}
+          >
+            {"Destroy room"}
           </Button>
-        </Popover>
+        </div>
       );
     else if (!room.opponentReady)
       return (

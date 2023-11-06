@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders navbar 1`] = `
+<DocumentFragment>
+  <div
+    class="ant-flex css-dev-only-do-not-override-xu9wm8 ant-flex-justify-space-between"
+  >
+    <div
+      class="ant-flex css-dev-only-do-not-override-xu9wm8"
+      classlabel="navbar"
+    >
+      <button
+        class="ant-btn css-dev-only-do-not-override-xu9wm8 ant-btn-link"
+        disabled=""
+        type="button"
+      >
+        <span>
+          Room
+        </span>
+      </button>
+      <button
+        class="ant-btn css-dev-only-do-not-override-xu9wm8 ant-btn-link"
+        type="button"
+      >
+        <span>
+          Lobby
+        </span>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

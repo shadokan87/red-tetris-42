@@ -229,6 +229,7 @@ app.delete("/game/room/delete", verifyToken, async (req, res, next) => {
   if (!services.room.exist(req.user.id)) {
     return res.status(StatusCode.ClientErrorNotFound).send("Room not found");
   }
+  const room = { ...services.room.get(req.user.id) };
   services.room.destroy(req.user.id);
   return res.status(StatusCode.SuccessOK).send("Room deleted successfully");
 });
