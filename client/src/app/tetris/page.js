@@ -34,7 +34,7 @@ const useTetrisClient = (gameGrid) => {
   });
 
   useEffect(() => {
-    if (!owner || !token) return;
+    if (!owner || !token || !room) return;
     if (socket) {
       socket.disconnect();
     }

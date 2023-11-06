@@ -1,0 +1,64 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./src/app/tetris/tetris.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+.main {
+  height: calc(100vh - 2em);
+}
+.playground {
+  height: 640px;
+  width: 320px;
+  border: 1px solid white;
+}
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 32px);
+  grid-template-rows: repeat(20, 32px);
+  border: 1px solid #ccc;
+}
+
+.gameInfo {
+  border: 1px solid #ccc;
+  padding: 1em;
+  height: auto;
+  max-height: 5em;
+}
+
+.gameInfoSection {
+  height: 640px;
+}
+
+.piece {
+  display: grid;
+  grid-template-columns: repeat(3, 32px);
+  grid-template-rows: repeat(2, 32px);
+  border: 1px solid #ccc;
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./src/app/root.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************/
+.main {
+  height: calc(100vh - 2em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oneMember {
+  padding: 1em;
+  background-color: #f2f2f2;
+}
+
+.membersWrapper {
+  border: 1px solid #ccc;
+  padding: 4em;
+}
+
+.userLink:hover {
+  color: #1890ff;
+  cursor: pointer;
+}
+.primaryAction {
+  width: 100%;
+}
+
