@@ -44,9 +44,34 @@ const getPlayerData = (socket) => {
   };
 };
 
-const endVersusGame = (socket) => {
+const endVersusGame = (socket, gameFail) => {
   const socketGame = getSocketGame(socket);
   if (!socketGame) return;
+  if (gameFail) {
+    const { room } = socketGame;
+    if (socketGame.instance.owner) socketGame.instance.owner.stopGame();
+    if (socketGame.instance.opponent) socketGame.instance.opponent.stopGame();
+
+    const updatedRoom = services.room.update(room.owner, (room) => {
+      return {
+        ...room,
+        gameStarted: false,
+        opponentReady: false,
+      };
+    });
+
+    tetrisInstances.delete(room.id);
+    const ownerLobbySocket = socketInfo.get(room.owner);
+    const opponentLobbySocket = socketInfo.get(room.opponent);
+    [ownerLobbySocket, opponentLobbySocket].forEach((s) => {
+      if (s && s.socket) {
+        s.socket.emit("roomUpdate", updatedRoom);
+        s.socket.emit("gameFail");
+      }
+    });
+    console.log(`GAME_FAIL: CLEARED INSTANCES FOR ROOM ${room.id}`);
+    return;
+  }
   const allInstances = [
     socketGame.instance.owner,
     socketGame.instance.opponent,
@@ -134,12 +159,14 @@ module.exports = {
       const token = socket.handshake.query.token;
       const user = await services.auth.verify(token);
       if (user) {
+        console.log(`GAMENAMESPACE USER ${user.username}`);
         gameNamespaceInfo.set(user.id, {
           user,
           socket,
         });
         next();
       } else {
+        console.log("FAILED TO AUTH USER");
         next(new Error("Authentication error"));
       }
     });
@@ -155,7 +182,7 @@ module.exports = {
     function emitToPlayerVolatile(userId, header, ...args) {
       const gameSocket = gameNamespaceInfo.get(userId);
       if (!gameSocket) {
-        console.log(`ERR_SOCKET_EMIT ${userId}`);
+        console.log(`ERR_SOCKET_EMIT userId: ${userId} header: ${header}`);
         return;
       }
       gameSocket.socket.emit(header, ...args);
@@ -192,7 +219,7 @@ module.exports = {
     };
 
     const createVersusInstance = (room, userInfo, socket) => {
-      console.log(`USERINFO`, userInfo.user);
+      console.log(`CREATE INSTANCE`, userInfo.user.username);
       const gameOverCallback = () => {
         endVersusGame(socket);
         // tetrisInstances.delete(room.id);
@@ -246,12 +273,30 @@ module.exports = {
       } else {
         const unlock = await mutex.acquire();
         try {
+          console.log(`BREAKPOINT 1 ${userInfo.user.username}`);
           const role = room.owner == userInfo.user.id ? "owner" : "opponent";
           if (!instance) {
+            console.log(`BREAKPOINT 2 ${userInfo.user.username}`);
             const versusInstance = createVersusInstance(room, userInfo, socket);
             let newInstance = {};
             newInstance[role] = versusInstance;
             tetrisInstances.set(room.id, newInstance);
+            let countdown = 10;
+            const intervalId = setInterval(() => {
+              console.log(`CLANING BOT FOR ${room.id} in ${countdown} seconds`);
+              countdown--;
+            }, 1000);
+
+            setTimeout(() => {
+              clearInterval(intervalId);
+              const retrieveGame = tetrisInstances.get(room.id);
+              if (!retrieveGame.owner || !retrieveGame.opponent) {
+                endVersusGame(socket, true);
+              } else {
+                console.log(`GAME CLEAR CANCEL FOR ${room.id}`);
+              }
+            }, 10000);
+
             console.log(`INIT FIRST PLAYER ${role}`);
           } else {
             if (instance[role]) return;
@@ -272,6 +317,16 @@ module.exports = {
             allInstances.forEach((instance, index) => {
               if (instance) {
                 instance.setTetrominoDispenser(dispenser);
+                instance.attachOnDrawing((data) => {
+                  const spectre = data.filter(
+                    (piece) => piece.kind == "spectre"
+                  );
+                  emitToPlayerVolatile(
+                    index == 0 ? room.opponent : room.owner,
+                    "spectre",
+                    spectre
+                  );
+                });
                 instance.startGame();
               } else {
                 console.log(`DBUG INDEX ${index} NOT FOUND [allInstances 2]`);
@@ -281,10 +336,6 @@ module.exports = {
             socket.on("disconnect", () =>
               console.log(`ROLE ${role} DISCONNECTED`)
             );
-            // setTimeout(() => {
-            //   endVersusGame(socket);
-            //   console.log("DEBUG CLEARED VERSUS GAME");
-            // }, 10000);
           }
         } finally {
           unlock();

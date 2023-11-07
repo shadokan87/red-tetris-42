@@ -145,6 +145,18 @@ export class Tetris {
     return this;
   }
 
+  /**
+   * Attaches a callback function to the onDrawing event.
+   * @param {function} callbackToAttach - The callback function to attach.
+   */
+  attachOnDrawing(callbackToAttach) {
+    const existingOnDrawing = this.onDrawing;
+    this.onDrawing = (data) => {
+      existingOnDrawing(data);
+      callbackToAttach(data);
+    };
+  }
+
   getId() {
     return this.id;
   }
@@ -321,6 +333,7 @@ export class Tetris {
       this.onScoreUpdate({
         points: this.score,
         lineClears: this.totalLineClear,
+        level: this.scoreToLevel(this.score),
       });
     }
     this.tetromino = this.getNextTetromino();
@@ -330,7 +343,41 @@ export class Tetris {
     return {
       points: this.score,
       lineClears: this.totalLineClear,
+      level: this.scoreToLevel(this.score),
     };
+  }
+
+  scoreToLevel(score) {
+    if (score == 0) return 1;
+    else if (score <= 100) return 2;
+    else if (score <= 400) return 3;
+    else if (score <= 800) return 4;
+    else if (score <= 1300) return 5;
+    else if (score <= 2100) return 6;
+    else return 7;
+  }
+
+  levelToSpeed(level) {
+    switch (level) {
+      case 1:
+        return 35;
+      case 2:
+        return 30;
+      case 3:
+        return 25;
+      case 4:
+        return 20;
+      case 5:
+        return 15;
+      case 6:
+        return 10;
+      default:
+        return 5;
+    }
+  }
+
+  getSpeed() {
+    return this.levelToSpeed(this.scoreToLevel(this.score));
   }
 
   loop() {
@@ -352,7 +399,7 @@ export class Tetris {
 
     // draw the active this.tetromino
     if (this.tetromino) {
-      if (++this.count > 35) {
+      if (++this.count > this.getSpeed()) {
         this.tetromino.row++;
         this.count = 0;
 

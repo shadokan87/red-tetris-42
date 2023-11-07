@@ -9,7 +9,7 @@ import {
   drawPieceAt,
 } from "./RenderTetris";
 import { Mutex } from "../utils";
-import { tokenSelector } from "../redux/sessionReducer";
+import { tokenSelector, userSelector } from "../redux/sessionReducer";
 import { useDispatch, useSelector } from "react-redux";
 import { io } from "socket.io-client";
 import withAuth from "../withAuth";
@@ -20,8 +20,19 @@ import { roomSelector, setRoom } from "../redux/lobbyReducer";
 import { useRoomMembers } from "../page";
 
 const keyStokes = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
+const drawPieces = (gameGrid, data, spectre) => {
+  clearGrid(gameGrid);
+  let pieces = [];
+  for (let i = 0; i < data.length; i++) {
+    pieces.push(createPieceElement(data[i], spectre));
+  }
+  for (let i = 0; i < pieces.length; i++) {
+    gameGrid.current.appendChild(pieces[i]);
+  }
+};
 
-const useTetrisClient = (gameGrid) => {
+const useTetrisClient = (gameGrid, spectreGrid) => {
+  const user = useSelector(userSelector);
   const dispatch = useDispatch();
   const router = useRouter();
   const room = useSelector(roomSelector);
@@ -31,6 +42,7 @@ const useTetrisClient = (gameGrid) => {
   const [score, setScore] = useState({
     points: 0,
     lineClears: 0,
+    level: 1,
   });
 
   useEffect(() => {
@@ -46,15 +58,11 @@ const useTetrisClient = (gameGrid) => {
       reconnectionDelay: 2000,
     })
       .on("data", (data) => {
-        console.log("data", data);
-        clearGrid(gameGrid);
-        let pieces = [];
-        for (let i = 0; i < data.length; i++) {
-          pieces.push(createPieceElement(data[i]));
-        }
-        for (let i = 0; i < pieces.length; i++) {
-          gameGrid.current.appendChild(pieces[i]);
-        }
+        drawPieces(gameGrid, data);
+      })
+      .on("spectre", (spectre) => {
+        console.log("spectre", spectre);
+        drawPieces(spectreGrid, spectre, true);
       })
       .on("score", (newScore) => setScore(newScore))
       .on("gameOver", (newRoomData) => {
@@ -97,24 +105,31 @@ const useControls = (socket) => {
 
 const Tetris = () => {
   const gameGrid = useRef(null);
-  const [socket, score] = useTetrisClient(gameGrid);
+  const spectreGrid = useRef(null);
+  const [socket, score] = useTetrisClient(gameGrid, spectreGrid);
   const router = useRouter();
   useControls(socket);
 
   if (!socket) return <></>;
   return (
     <>
-      <Flex justify={"center"} align="center" className="main" gap={"0.5em"}>
-        <RenderTetris gameGridRef={gameGrid} />
-        <Flex
-          justify="flex-start"
-          className="gameInfoSection"
-          vertical
-          gap={"0.5em"}
-        >
-          <GameInfo title={"score"} info={score.points} />
-          <GameInfo title={"line"} info={score.lineClears} />
+      <Flex justify={"center"} align="center">
+        <Flex justify={"center"} align="center" className="main" gap={"0.5em"}>
+          <RenderTetris gameGridRef={gameGrid} />
+          <Flex
+            justify="flex-start"
+            className="gameInfoSection"
+            vertical
+            gap={"0.5em"}
+          >
+            {Object.entries(score).map(([key, value]) => (
+              <GameInfo title={key} info={value} />
+            ))}
+          </Flex>
         </Flex>
+        <div className={"spectreGrid"}>
+          <RenderTetris gameGridRef={spectreGrid} />
+        </div>
       </Flex>
     </>
   );

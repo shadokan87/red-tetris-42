@@ -74,13 +74,13 @@ function Lobby() {
     });
   }, [publicRooms]);
 
-  useEffect(() => {
-    if (!room) return;
-    if (room.gameStarted) {
-      router.push("/tetris", undefined, { shallow: true });
-    }
-    console.log("new info", room);
-  }, [room]);
+  // useEffect(() => {
+  //   if (!room) return;
+  //   if (room.gameStarted) {
+  //     router.push("/tetris", undefined, { shallow: true });
+  //   }
+  //   console.log("new info", room);
+  // }, [room]);
 
   useEffect(() => {
     if (!axiosReady) return;

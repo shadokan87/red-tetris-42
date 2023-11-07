@@ -10,6 +10,7 @@ import Link from "next/link";
 import "./root.css";
 import { userSelector } from "./redux/sessionReducer";
 import { Mutex } from "./utils";
+import { redirectToTetris } from "./utils";
 
 const parseRoomUrl = (url) => {
   const trimmedUrl = url.split("/")[0];
@@ -112,13 +113,14 @@ function Home() {
   useEffect(() => {
     if (!room) return;
     if (room.gameStarted) {
-      router.push("/tetris", undefined, {
-        shallow: true,
-        query: { redirect: window.location.hash },
-      });
+      if (room.owner == user.id) redirectToTetris(router);
+      else {
+        setTimeout(() => {
+          redirectToTetris(router);
+        }, 5000);
+      }
     }
-    console.log("new info", room);
-  }, [room, window.location.hash]);
+  }, [room]);
 
   useEffect(() => {
     if (!axiosReady) return;

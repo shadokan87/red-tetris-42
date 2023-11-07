@@ -14,3 +14,9 @@ export class Mutex {
     }
   }
 }
+
+export const redirectToTetris = (router) =>
+  router.push("/tetris", undefined, {
+    shallow: true,
+    query: { redirect: window.location.hash },
+  });

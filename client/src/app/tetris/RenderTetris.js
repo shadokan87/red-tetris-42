@@ -16,13 +16,17 @@ export const drawPieceAt = (gameGrid, data) => {
   gameGrid.current.appendChild(onePiece);
 };
 
-export const createPieceElement = (data) => {
+export const createPieceElement = (data, spectre) => {
   const { row, col, color } = data;
   const onePiece = document.createElement("div");
   onePiece.style.width = `${grid}px`;
   onePiece.style.height = `${grid}px`;
-  onePiece.style.backgroundColor = color;
-  onePiece.style.border = "1px solid black";
+  if (spectre) {
+    onePiece.style.backgroundColor = "grey";
+  } else {
+    onePiece.style.backgroundColor = color;
+    onePiece.style.border = "1px solid black";
+  }
   onePiece.style.gridColumnStart = col;
   onePiece.style.gridRowStart = row;
   onePiece.setAttribute("id", `currentPiece`);
