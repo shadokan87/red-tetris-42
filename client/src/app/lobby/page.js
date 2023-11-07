@@ -8,12 +8,13 @@ import { Button, Modal, Typography, Flex, Table } from "antd";
 import { useAxios } from "../contexts/axios";
 import { message } from "antd";
 import axios from "axios";
-import { Form, Input, Checkbox } from "antd";
+import { Form, Input, Checkbox, Select } from "antd";
 import { roomSelector, setRoom } from "../redux/lobbyReducer";
 import { useRouter } from "next/navigation";
 
 const CreateRoomModal = ({ open, onCancel, onCreate }) => {
   const [form] = Form.useForm();
+  const scores = [100, 200, 300, 400, 500, 600, 700, 800, 1300, 2100];
 
   return (
     <Modal
@@ -43,6 +44,23 @@ const CreateRoomModal = ({ open, onCancel, onCreate }) => {
           ]}
         >
           <Input placeholder="Room Name" />
+        </Form.Item>
+        <Form.Item
+          name="score"
+          rules={[
+            {
+              required: true,
+              message: "Please select the score!",
+            },
+          ]}
+        >
+          <Select placeholder="Select a score">
+            {scores.map((score) => (
+              <Select.Option key={score} value={score}>
+                {score}
+              </Select.Option>
+            ))}
+          </Select>
         </Form.Item>
         <Form.Item name="isPublic" valuePropName="checked" initialValue={true}>
           <Checkbox>Public Room</Checkbox>
@@ -74,14 +92,6 @@ function Lobby() {
     });
   }, [publicRooms]);
 
-  // useEffect(() => {
-  //   if (!room) return;
-  //   if (room.gameStarted) {
-  //     router.push("/tetris", undefined, { shallow: true });
-  //   }
-  //   console.log("new info", room);
-  // }, [room]);
-
   useEffect(() => {
     if (!axiosReady) return;
     fetchRooms();
@@ -103,7 +113,6 @@ function Lobby() {
           shallow: true,
         }
       );
-      // console.log("response", response.data);
       messageApi.success("Room created successfully");
     } catch (error) {
       console.error(error);

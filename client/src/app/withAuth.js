@@ -48,7 +48,10 @@ const withAuth = (Component) => {
           } catch (e) {
             console.error(e);
           }
-        } else router.push("/signin", undefined, { shallow: true });
+        } else {
+          if (pathname != "/signup")
+            router.push("/signin", undefined, { shallow: true });
+        }
       } else {
       }
     }, [isAuth, dispatch]);

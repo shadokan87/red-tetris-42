@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Game" ADD COLUMN     "scoreLimit" INTEGER NOT NULL DEFAULT 100;

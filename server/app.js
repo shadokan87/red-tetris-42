@@ -65,6 +65,11 @@ app.post(
   verifyToken,
   validateRoomCreation,
   async (req, res) => {
+    const score = parseInt(req.body.score);
+    if (![100, 200, 300, 400, 500, 600, 700, 800, 1300, 2100].includes(score)) {
+      return res.status(400).send("Invalid score value");
+    }
+
     const createdRoom = services.room.create(req.user.id, {
       name: req.body.name,
       isPublic: req.body.isPublic,
@@ -72,6 +77,7 @@ app.post(
       solo: req.body.solo,
       gameStarted: false,
       opponentReady: false,
+      scoreLimit: req.body.score,
     });
 
     return res.status(StatusCode.SuccessCreated).json({

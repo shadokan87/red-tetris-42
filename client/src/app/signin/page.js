@@ -53,28 +53,44 @@ function Signin() {
   };
 
   return (
-    <main className={"landing"}>
-      <div></div>
-      <Form onFinish={onFinish}>
-        <Form.Item name="username" rules={[{ required: true }]}>
-          <Input placeholder="username" />
-        </Form.Item>
-        <Form.Item name="password" rules={[{ required: true }]}>
-          <Input.Password placeholder="password" />
-        </Form.Item>
-        <Checkbox
-          checked={rememberMe}
-          onChange={(e) => setRememberMe(e.target.checked)}
+    <Flex justify="center" align="center" className="landing">
+      <Flex vertical>
+        <Flex justify="center">
+          <Typography>
+            <h1>{"Signin"}</h1>
+          </Typography>
+        </Flex>
+        <Form onFinish={onFinish}>
+          <Form.Item name="username" rules={[{ required: true }]}>
+            <Input placeholder="username" />
+          </Form.Item>
+          <Form.Item name="password" rules={[{ required: true }]}>
+            <Input.Password placeholder="password" />
+          </Form.Item>
+          <Checkbox
+            checked={rememberMe}
+            onChange={(e) => setRememberMe(e.target.checked)}
+          >
+            Remember me
+          </Checkbox>
+          <Form.Item>
+            <Button
+              type="primary"
+              htmlType="submit"
+              disabled={isLoading == true}
+            >
+              <Typography>{"Signin"}</Typography>
+            </Button>
+          </Form.Item>
+        </Form>
+        <Button
+          type={"link"}
+          onClick={() => router.push("/signup", undefined, { shallow: true })}
         >
-          Remember me
-        </Checkbox>
-        <Form.Item>
-          <Button type="primary" htmlType="submit" disabled={isLoading == true}>
-            <Typography>{"Signin"}</Typography>
-          </Button>
-        </Form.Item>
-      </Form>
-    </main>
+          {"I don't have an account"}
+        </Button>
+      </Flex>
+    </Flex>
   );
 }
 

@@ -88,12 +88,14 @@ const endVersusGame = (socket, gameFail) => {
         ? socketGame.room.owner
         : socketGame.room.opponent;
     try {
+      const { scoreLimit } = socketGame.room;
       (async () =>
         (savedGame = await services.game.saveVersusGame(
           socketGame.room.owner,
           socketGame.room.opponent,
           scores,
-          winnerId
+          winnerId,
+          scoreLimit
         )))();
     } catch (error) {
       console.error("ERR_SAVE_GAME", error);
@@ -222,12 +224,6 @@ module.exports = {
       console.log(`CREATE INSTANCE`, userInfo.user.username);
       const gameOverCallback = () => {
         endVersusGame(socket);
-        // tetrisInstances.delete(room.id);
-        // const updatedRoom = services.room.update(room.owner, (room) => {
-        //   return { ...room, gameStarted: false, opponentReady: false };
-        // });
-        // emitToPlayer(userInfo.user.id, "gameOver", updatedRoom);
-        // socket.disconnect();
       };
 
       const drawingDataCallback = (drawingData) => {
@@ -236,6 +232,7 @@ module.exports = {
 
       const scoreCallback = (score) => {
         emitToPlayer(userInfo.user.id, "score", score);
+        if (score.points >= room.scoreLimit) endVersusGame(socket);
       };
 
       const versusInstance = new Tetris(
