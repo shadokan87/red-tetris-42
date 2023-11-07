@@ -5,11 +5,13 @@ import { tokenSelector } from "./sessionReducer";
 import { io } from "socket.io-client";
 import { AxiosProvider } from "../contexts/axios";
 import { setRoom } from "./lobbyReducer";
+import { useRouter } from "next/navigation";
 
 const SocketHandler = ({ children }) => {
   const token = useSelector(tokenSelector);
   const dispatch = useDispatch();
   const [socket, setSocket] = useState(null);
+  const router = useRouter();
 
   useEffect(() => {
     if (socket) {
@@ -24,6 +26,8 @@ const SocketHandler = ({ children }) => {
     newSocket.on("roomUpdate", (data) => {
       console.warn("roomUpdate", data);
       dispatch(setRoom(data.room));
+      if (!data.room)
+        router.push("/lobby");
     });
     setSocket(newSocket);
 

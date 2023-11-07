@@ -1,3 +1,10 @@
+const userSelect = {
+  password: false,
+  id: true,
+  username: true,
+  displayname: true,
+}
+
 export class userService {
   prismaClient;
   constructor(prismaClient) {
@@ -13,6 +20,38 @@ export class userService {
       where: {
         id,
       },
+    });
+  }
+
+  async userProfile(username) {
+    const gameInclude = {
+      lhsPlayer: {
+        select: {
+          ...userSelect
+        }
+      },
+      rhsPlayer: {
+        select: {
+          ...userSelect
+        }
+      },
+    }
+    return await this.prismaClient.user.findFirst({
+      where: {
+        username,
+      },
+      include: {
+        leftPlayer: {
+          include: {
+            ...gameInclude
+          },
+        },
+        rightPlayer: {
+          include: {
+            ...gameInclude
+          },
+        },
+      }
     });
   }
 

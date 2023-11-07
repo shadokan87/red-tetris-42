@@ -208,7 +208,55 @@ app.post(
     return res.status(StatusCode.SuccessOK).json(result);
   }
 );
-app.get("/user/:id", async (req, res) => {
+
+app.get("/userProfile/:username", verifyToken, async (req, res) => {
+  const username = String(req.params.username);
+  if (!username)
+    return res
+      .status(StatusCode.ClientErrorBadRequest)
+      .json({ message: "Invalid request parameters" });
+  const userProfile = await services.user.userProfile(username);
+  if (!userProfile)
+    return res.status(StatusCode.ClientErrorNotFound).send("User not found");
+
+  const buildOneGameHistory = (game) => {
+    const { lhsPlayer, rhsPlayer, lhsScore, rhsScore } = game;
+    return {
+      scoreLimit: game.scoreLimit,
+      isWinner: game.winnerId == req.user.id,
+      leftPlayer: {
+        username: lhsPlayer.username,
+        displayname: lhsPlayer.displayname,
+      },
+      leftPlayerScore: {
+        ...lhsScore
+      },
+      rightPlayer: {
+        username: rhsPlayer.username,
+        displayname: rhsPlayer.displayname,
+      },
+      rightPlayerScore: {
+        ...rhsScore
+      }
+    }
+  }
+  const buildGameHistory = (profile) => {
+    const leftResult = profile.leftPlayer.map(game => buildOneGameHistory(game));
+    const rightResult = profile.rightPlayer.map(game => buildOneGameHistory(game));
+    return leftResult.concat(rightResult);
+  }
+  const result = {
+    profile: {
+      id: userProfile.id,
+      username: userProfile.username,
+      displayname: userProfile.displayname,
+    },
+    Games: buildGameHistory(userProfile),
+  }
+  return res.status(StatusCode.SuccessOK).json(result);
+});
+
+app.get("/user/:id", verifyToken, async (req, res) => {
   const id = Number(req.params.id);
   const user = await services.user.findById(id);
   if (!user) {
@@ -238,6 +286,35 @@ app.delete("/game/room/delete", verifyToken, async (req, res, next) => {
   const room = { ...services.room.get(req.user.id) };
   services.room.destroy(req.user.id);
   return res.status(StatusCode.SuccessOK).send("Room deleted successfully");
+});
+
+app.delete("/game/room/leave", verifyToken, async (req, res, next) => {
+  const room = services.room.isInRoom(req.user.id);
+  const saveRoom = { ...room };
+  if (!room) {
+    return res.status(StatusCode.ClientErrorNotFound).send("Room not found");
+  }
+  const updatedRoom = services.room.removeMember(room.owner);
+  const result = {
+    message: `Left room`,
+    room: updatedRoom,
+  };
+  const socketMap = socket.getSocketMap();
+  const io = socket.getIO();
+  [saveRoom.opponent, saveRoom.owner].forEach((id, index) => {
+    const userInfo = socketMap.get(id);
+    if (userInfo) {
+      if (index == 0)
+        userInfo.socket.emit("roomUpdate", { room: null });
+      else
+        userInfo.socket.emit("roomUpdate", result);
+      logger.info("emit to" + id, result);
+    } else {
+      logger.info("cannot emit, not connected" + id);
+      logger.info(`SocketMap keys: ${Array.from(socketMap.keys())}`);
+    }
+  });
+  return res.status(StatusCode.SuccessOK).json(result);
 });
 
 //# Auth

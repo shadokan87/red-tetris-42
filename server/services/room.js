@@ -90,9 +90,10 @@ export class roomService {
    * @param {string} userId - The ID of the member to be removed.
    * @returns {object} - The updated room.
    */
-  removeMember(ownerUserId, userId) {
-    const room = this.get(ownerUserId);
+  removeMember(ownerUserId) {
+    let room = this.get(ownerUserId);
     delete room.opponent;
+    room.opponentReady = false;
     this.rooms.set(ownerUserId, room);
     return room;
   }

@@ -51,11 +51,11 @@ export const useRoomMembers = (room) => {
   return [owner, opponent];
 };
 
-const UserLink = ({ user }) => {
+export const UserLink = ({ user }) => {
   return (
     <>
       <Flex gap={"0.5em"}>
-        <Link href="/404" className="userLink">
+        <Link href={`/profile/${user.username}`} className="userLink">
           <Typography>{user.displayname}</Typography>
         </Link>
         <Typography>{user.username}</Typography>
@@ -137,14 +137,18 @@ function Home() {
               router.push("/404", undefined, { shallow: true });
             });
         })();
-      } catch (e) {}
+      } catch (e) { }
     } else {
       router.push("/404", undefined, { shallow: true });
     }
   }, [window.location, axiosReady]);
 
   const handleKickOpponent = async () => {
-    console.log("kick user: " + opponent.displayname);
+    try {
+      await axiosInstance.delete(`/game/room/leave`);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   const OwnerActions = () => (
@@ -185,9 +189,18 @@ function Home() {
       }
     };
 
+    const handleLeaveRoom = async () => {
+      try {
+        await axiosInstance.delete(`/game/room/leave`);
+        router.push("/lobby");
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
     if (isOwner)
       return (
-        <div>
+        <Flex vertical gap={"0.5em"}>
           <Popover
             content="Opponent not ready"
             trigger="hover"
@@ -213,27 +226,48 @@ function Home() {
           >
             {"Destroy room"}
           </Button>
-        </div>
+        </Flex>
       );
     else if (!room.opponentReady)
       return (
-        <Button
-          type={"primary"}
-          className={"primaryAction"}
-          onClick={async () => await handleSetReady()}
-        >
-          {"I am ready"}
-        </Button>
+        <Flex vertical gap={"0.5em"}>
+          <Button
+            type={"primary"}
+            className={"primaryAction"}
+            onClick={async () => await handleSetReady()}
+          >
+            {"I am ready"}
+          </Button>
+          <Button
+            type={"primary"}
+            className={"primaryAction"}
+            danger
+            onClick={async () => await handleLeaveRoom()}
+          >
+            {"Leave room"}
+          </Button>
+        </Flex>
+
       );
     else
       return (
-        <Button
-          type={"default"}
-          className={"primaryAction"}
-          onClick={async () => await handleSetReady()}
-        >
-          {"I am not ready"}
-        </Button>
+        <Flex vertical gap={"0.5em"}>
+          <Button
+            type={"default"}
+            className={"primaryAction"}
+            onClick={async () => await handleSetReady()}
+          >
+            {"I am not ready"}
+          </Button>
+          <Button
+            type={"primary"}
+            className={"primaryAction"}
+            danger
+            onClick={async () => await handleLeaveRoom()}
+          >
+            {"Leave room"}
+          </Button>
+        </Flex>
       );
   };
 

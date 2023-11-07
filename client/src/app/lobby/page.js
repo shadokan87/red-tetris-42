@@ -82,6 +82,7 @@ function Lobby() {
   const [createRoom, setOpenCreateRoomModal] = useState(false);
   const [messageApi, contextHolder] = message.useMessage();
   const [publicRooms, setPublicRooms] = useState([]);
+  const [refresh, setRefresh] = useState(false);
   const roomTable = useMemo(() => {
     if (!publicRooms.length) return [];
     return publicRooms.map((r) => {
@@ -95,7 +96,7 @@ function Lobby() {
   useEffect(() => {
     if (!axiosReady) return;
     fetchRooms();
-  }, [axiosReady, axiosInstance]);
+  }, [axiosReady, axiosInstance, refresh]);
 
   const handleCancel = () => {
     setOpenCreateRoomModal((prev) => !prev);
@@ -179,9 +180,14 @@ function Lobby() {
           <h1>{"Lobby"}</h1>
         </Typography>
       </Flex>
-      <Button type={"primary"} onClick={() => setOpenCreateRoomModal(true)}>
-        {"Create room"}
-      </Button>
+      <Flex gap={"0.5em"}>
+        <Button type={"primary"} onClick={() => setOpenCreateRoomModal(true)}>
+          {"Create room"}
+        </Button>
+        <Button type={"primary"} onClick={() => setRefresh(prev => !prev)}>
+          {"Refresh"}
+        </Button>
+      </Flex>
       <Table
         onRow={(record, rowIndex) => {
           return {

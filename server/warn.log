@@ -741,3 +741,8 @@
 {"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"scoreLimit\":100,\"id\":0,\"opponent\":2}","service":"red-tetris_okay"}
 {"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"scoreLimit\":100,\"id\":0,\"opponent\":2}","service":"red-tetris_okay"}
 {"level":"warn","message":"ROOM {\"name\":\"fdgdgf\",\"isPublic\":true,\"owner\":2,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"scoreLimit\":100,\"id\":0,\"opponent\":1}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"scoreLimit\":100,\"id\":0,\"opponent\":2}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"okay\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"scoreLimit\":100,\"id\":0,\"opponent\":2}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"oilkkj\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"scoreLimit\":100,\"id\":0,\"opponent\":2}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"oilkkj\",\"isPublic\":true,\"owner\":1,\"solo\":false,\"gameStarted\":false,\"opponentReady\":true,\"scoreLimit\":100,\"id\":0,\"opponent\":2}","service":"red-tetris_okay"}
+{"level":"warn","message":"ROOM {\"name\":\"dgdf\",\"isPublic\":true,\"owner\":1,\"solo\":true,\"gameStarted\":false,\"opponentReady\":false,\"scoreLimit\":100,\"id\":1}","service":"red-tetris_okay"}
